@@ -1,4 +1,4 @@
-const tarotDeck = {
+const deck = {
   // Major Arcana
   "The Fool": {
     upright: {
@@ -1619,4 +1619,6 @@ const tarotDeck = {
   }
 };
 
-module.exports = tarotDeck;
+module.exports = {
+  deck: deck
+};

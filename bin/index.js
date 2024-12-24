@@ -1,103 +1,149 @@
 #!/usr/bin/env node
 const inquirer = require('inquirer');
 const CliFrames = require('cli-frames');
-const tarotDeck = require('./cards');
+const cards = require('./cards');
+const chalk = require('chalk');
 
 const asciiloader = [
-    '♡⋅˖+⟡✧⟡+˖✧⟡+˖✧*:･ﾟ✧',
-    '⋅♡˖+⟡✧⟡+˖𓈒⭒',
-    '⋅˖♡+⟡✧⟡+˖݁.⋆·˚',
-    '⋅˖+♡⟡✧⟡+˖✧*:･ﾟ✧',
-    '⋅˖+⟡♡✧⟡+˖𓈒⭒',
-    '⋅˖+⟡✧♡⟡+˖݁.⋆·˚',
-    '⋅˖+⟡✧⟡♡+˖✧*:･ﾟ✧',
-    '⋅˖+⟡✧⟡+♡˖𓈒⭒',
-    '⋅˖+⟡✧⟡+˖♡݁.⋆·˚',
-    '⋅˖+⟡✧⟡+˖✧♡:･ﾟ✧',
-    '⋅˖+⟡✧⟡+˖𓈒♡⭒',
-    '⋅˖+⟡✧⟡+˖݁.⋆·♡'
+  '( •_•)︻デ═一',
+  '( -_•)︻デ═一',
+  '( •_•)︻デ═一',
+  '( -_•)︻デ═一 ---- ˖✧',
+  '( -_•)︻デ═一 ---- ✧˖°',
+  '( -_•)︻デ═一 ---- ˖✧⋆ﾟ⊹',
+  '( -_•)︻デ═一 ---- ✧˖°⋆ﾟ⊹',
+  '( -_•)︻デ═一 ---- ˖✧⋆ﾟ⊹⁎⁺˳✧༚',
+  '( -_•)︻デ═一 ---- ✧˖°⋆ﾟ⊹⁎⁺˳✧༚♡',
 ];
 
-// Start the loader animation
-const loader = new CliFrames();
-loader.load(asciiloader);
-loader.start();
+const loader = new CliFrames({
+  frames: asciiloader,
+  autostart: false, // Disable autostart to prevent blocking
+  delay: 500 // Set delay to 500ms
+});
 
-const greeting = `\x1b[38;2;234;154;229m
-┌───────────┐
-│           │
-│    hi♡    │
-│           │
-└───────────┘\x1b[0m`;
-console.log(greeting);
+const { deck } = cards;
+const customPrefix = chalk.hex('#fdb2ff')('♱'); // Custom prefix for exit prompt
 
-function drawRandomCard() {
-  const cards = Object.keys(tarotDeck);
-  const randomCard = cards[Math.floor(Math.random() * cards.length)];
-  const isReversed = Math.random() < 0.5;
-  return {
-    name: randomCard,
-    ...tarotDeck[randomCard][isReversed ? 'reversed' : 'upright']
-  };
+const exit = [
+  {
+    type: 'confirm',
+    name: 'exit',
+    message: chalk.hex('#fdb2ff')('have you seen enough?'),
+    default: true,
+    prefix: customPrefix, // Added custom prefix here
+    transformer: (input) => chalk.hex('#fdb2ff')(input)
+  }
+];
+
+function displayCard(card) {
+  const cardInfo = `${card.title}\n${card.meaning && card.meaning.description ? card.meaning.description : 'Description is missing.'}`;
+  const cardDisplay = `${card.card}`;
+  
+  console.log(`${cardInfo} ${cardDisplay}`);
+  console.log('\n♱ °˖✧◝(⁰▿⁰)◜✧˖° ♱\n');
 }
 
-// Example inquirer prompts
-inquirer
-  .prompt([
-    {
-      type: 'input',
-      name: 'name',
-      message: 'What is your name?',
-      default: 'User'
-    },
-    {
-      type: 'confirm',
-      name: 'readyForFuture',
-      message: 'Are you ready to see your future?',
-      default: true
-    },
-    {
-      type: 'list',
-      name: 'cardCount',
-      message: 'How many cards would you like to draw?',
-      choices: ['1', '2', '3'],
-      when: (answers) => answers.readyForFuture
-    }
-  ])
-  .then((answers) => {
-    if (answers.readyForFuture) {
-      const numCards = parseInt(answers.cardCount);
-      const drawnCards = [];
-      
-      for (let i = 0; i < numCards; i++) {
-        drawnCards.push(drawRandomCard());
-      }
+function pickCard(numCards) {
+  const drawnCards = [];
+  for (let i = 0; i < numCards; i++) {
+    const cards = deck ? Object.keys(deck) : [];
+    const randomCard = cards[Math.floor(Math.random() * cards.length)];
+    const isReversed = Math.random() < 0.5;
+    drawnCards.push({
+      name: randomCard,
+      ...deck[randomCard][isReversed ? 'reversed' : 'upright']
+    });
+  }
+  return drawnCards;
+}
 
-      console.log('\nYour cards:');
-      drawnCards.forEach((card, index) => {
-        console.log(`\nCard ${index + 1}: ${card.title}`);
-        console.log(card.card);
-        console.log(`${card.meaning.keywords.join(', ')}. ${card.meaning.description}`);
-      });
+function end(userName) {
+  inquirer.prompt(exit).then(answers => {
+    if (answers.exit) {
+      loader.start();
+      setTimeout(function() {
+        (async () => {
+          try {
+              const boxen = await import('boxen');
+              console.log('\x1b[38;2;234;154;229m' + await boxen.default(`goodbye, see you on the other side ${userName} <3`, {
+                padding: 0.5,
+                borderStyle: {
+                  topLeft: '♡',
+                  topRight: '♡', 
+                  bottomLeft: '♡',
+                  bottomRight: '♡',
+                  horizontal: '─',
+                  vertical: '│'
+                }
+              }) + '\x1b[0m');
+          } catch (error) {
+              console.error('Error creating boxed output:', error);
+          }
+        })();
+      }, 1000);
+    } else { 
+      //i want the console to clear if restarted, so i clear it
+      console.clear();
+      //loader.start begins the ascii loader
+      loader.start();
+      setTimeout(function() {
+        run();
+      }, 1000);
     }
-    
-    // The boxen output
-    (async () => {
-      try {
-          const boxen = await import('boxen');
-          console.log('\x1b[38;2;234;154;229m' + await boxen.default(`welcome to the \nmatrix,\n${answers.name}!`, {
-            padding: 1,
-            borderStyle: {
-              topLeft: '♡',
-              topRight: '♡', 
-              bottomLeft: '♡',
-              bottomRight: '♡',
-              horizontal: '─',
-              vertical: '│'
-            }
-          }) + '\x1b[0m');
-      } catch (error) {
-          console.error('Error creating boxed output:', error);
-      }
-    })();
   });
+}
+
+function run() {
+  const customPrefix = chalk.hex('#fdb2ff')('♱');
+  inquirer
+    .prompt([
+      {
+        type: 'input',
+        name: 'name',
+        message: chalk.white('what is your name?'),
+        default: 'hobbit',
+        prefix: customPrefix,
+        transformer: (input) => chalk.hex('#fdb2ff')(input)
+      },
+      {
+        type: 'list',
+        name: 'cardCount',
+        message: chalk.white('how many cards would you like to pull today?'),
+        choices: [
+          { name: '1', value: 1 },
+          { name: '2', value: 2 },
+          { 
+            name: '3', 
+            value: 3, 
+            titles: ['past card:', 'present card:', 'future card:'],
+            displayTitles: true
+          }
+        ],
+        prefix: customPrefix,
+        transformer: (input) => chalk.hex('#fdb2ff')(input),
+        cursor: '♱'
+      }
+    ])  
+    .then((answers) => {
+      const numCards = parseInt(answers.cardCount);
+      const drawnCards = pickCard(numCards);
+
+      console.log('your cards:');
+      drawnCards.forEach((card, index) => {
+        let cardTitle;
+        if (numCards === 3) {
+          const titles = ['past card', 'present card', 'future card'];
+          cardTitle = titles[index];
+        } else {
+          cardTitle = `𓈒 ⭒ ݁ . card ${index + 1} ⋆·˚`;
+        }
+        console.log(`\n${cardTitle}`);
+        displayCard(card);
+      });
+
+      end(answers.name);
+    });
+}
+
+run();
