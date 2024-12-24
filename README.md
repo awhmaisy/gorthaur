@@ -1,4 +1,7 @@
 # gorthaur
+
+<img width="395" alt="image" src="https://github.com/user-attachments/assets/b0aa45df-837a-4b00-97ea-c23a9a96282f" />
+
 ────୨ৎ────
 
 CLI tarot card pulls from a deck of 78
