@@ -17,6 +17,8 @@ CLI tarot card pulls from a deck of 78
 - **v3** - will need to explain why the title of this project is a word from J.R.R. tolkien...
 - **v4** - we will add more cards and descriptions because its quite uninformative right now!
 
+<img width="494" alt="image" src="https://github.com/user-attachments/assets/ddb5df09-26c6-4f20-b327-b1390506fde3" />
+
 ## installation / usage
 ✦ . 　⁺ 　 . ✦ . 　⁺ 　 . ✦
 
