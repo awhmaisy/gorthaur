@@ -1,0 +1,21 @@
+{
+  "name": "gorthaur",
+  "version": "1.0.0",
+  "main": "bin/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "bin": {
+    "gorthaur": "./bin/index.js"
+  },
+  "dependencies": {
+    "boxen": "^8.0.1",
+    "chalk": "^4.1.2",
+    "cli-frames": "^2.2.10",
+    "inquirer": "^7.3.3",
+    "yargs": "^17.7.2"
+  }
+}
