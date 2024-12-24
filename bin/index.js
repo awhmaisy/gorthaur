@@ -18,12 +18,12 @@ const asciiloader = [
 
 const loader = new CliFrames({
   frames: asciiloader,
-  autostart: false, // Disable autostart to prevent blocking
-  delay: 500 // Set delay to 500ms
+  autostart: false, 
+  delay: 500 
 });
 
 const { deck } = cards;
-const customPrefix = chalk.hex('#fdb2ff')('♱'); // Custom prefix for exit prompt
+const customPrefix = chalk.hex('#fdb2ff')('♱'); 
 
 const exit = [
   {
@@ -31,7 +31,7 @@ const exit = [
     name: 'exit',
     message: chalk.hex('#fdb2ff')('have you seen enough?'),
     default: true,
-    prefix: customPrefix, // Added custom prefix here
+    prefix: customPrefix, 
     transformer: (input) => chalk.hex('#fdb2ff')(input)
   }
 ];
