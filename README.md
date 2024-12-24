@@ -30,6 +30,8 @@ to install the necessary dependencies, run: `npm install -g gorthaur` or simply 
 
 after that, you can use the CLI by executing `gorthaur` in your terminal.
 
+<img width="395" alt="image" src="https://github.com/user-attachments/assets/05dd21ea-7ff6-499f-b4da-e2f144af57c1" />
+
 ## inspiration and credits
 ✦ . 　⁺ 　 . ✦ . 　⁺ 　 . ✦
 
