@@ -22,7 +22,7 @@ CLI tarot card pulls from a deck of 78
 ## installation / usage
 ✦ . 　⁺ 　 . ✦ . 　⁺ 　 . ✦
 
-to install the necessary dependencies, run: `npm install -g gorthaur`. 
+to install the necessary dependencies, run: `npm install -g gorthaur` or simply `npm i gorthaur`.
 
 after that, you can use the CLI by executing `gorthaur` in your terminal.
 
