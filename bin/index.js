@@ -133,7 +133,7 @@ function run() {
       drawnCards.forEach((card, index) => {
         let cardTitle;
         if (numCards === 3) {
-          const titles = ['past card', 'present card', 'future card'];
+          const titles = ['𓈒 ⭒ ݁ . past card ⋆·˚`', '𓈒 ⭒ ݁ . present card ⋆·˚`', '𓈒 ⭒ ݁ . future card ⋆·˚`'];
           cardTitle = titles[index];
         } else {
           cardTitle = `𓈒 ⭒ ݁ . card ${index + 1} ⋆·˚`;
