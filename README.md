@@ -17,7 +17,7 @@
 - **1** - basic functionality. really basic.
 - **2** - ok we changed colors
 - **3** - will need to explain why the title of this project is a word from J.R.R. tolkien...
-- **4 (soon)** - adding all cards and descriptions because its quite uninformative right now!
+- **4 (soon)** - adding all major/minor arcana cards because its quite uninformative right now
 - **5 (soon)** - updating descriptions to something OTHER than a 4o generated sentence 
 
 
