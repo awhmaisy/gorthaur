@@ -1,4 +1,4 @@
-# gorthaur
+# 𝔤𝔬𝔯𝔱𝔥𝔞𝔲𝔯 ℭ𝔏ℑ
 
 
 <img width="395" alt="image" src="https://github.com/user-attachments/assets/b0aa45df-837a-4b00-97ea-c23a9a96282f" />
