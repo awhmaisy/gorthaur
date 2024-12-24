@@ -37,11 +37,10 @@ const exit = [
 ];
 
 function displayCard(card) {
-  const cardInfo = `${card.title}\n${card.meaning && card.meaning.description ? card.meaning.description : 'Description is missing.'}`;
+  const cardInfo = `${card.title} // ${card.description}`;
   const cardDisplay = `${card.card}`;
   
   console.log(`${cardInfo} ${cardDisplay}`);
-  console.log('\n♱ °˖✧◝(⁰▿⁰)◜✧˖° ♱\n');
 }
 
 function pickCard(numCards) {
@@ -134,13 +133,15 @@ function run() {
       drawnCards.forEach((card, index) => {
         let cardTitle;
         if (numCards === 3) {
-          const titles = ['𓈒 ⭒ ݁ . past card ⋆·˚`', '𓈒 ⭒ ݁ . present card ⋆·˚`', '𓈒 ⭒ ݁ . future card ⋆·˚`'];
+          const titles = ['𓈒 ⭒ ݁ . past card ⋆·˚`', '𓈒 ⭒ ݁ . present card ⋆·˚`', '𓈒 ⭒ ݁ . future card ⋆·˚`'];
           cardTitle = titles[index];
         } else {
-          cardTitle = `𓈒 ⭒ ݁ . card ${index + 1} ⋆·˚`;
+          cardTitle = chalk.hex('#fdb2ff')(`𓈒 ⭒ ݁ . card ${index + 1} ⋆·˚`);
         }
+        console.log('\n╭────── · · ୨୧ · · ──────╮');
         console.log(`\n${cardTitle}`);
         displayCard(card);
+        console.log('╰────── · · ୨୧ · · ──────╯\n');
       });
 
       end(answers.name);

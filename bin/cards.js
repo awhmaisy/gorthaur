@@ -1,1624 +1,2055 @@
 const deck = {
-  // Major Arcana
-  "The Fool": {
+  // the major arcana babyyyy
+  "the fool": {
     upright: {
-      title: "The Fool",
+      title: "the fool",
+      description: "the fool represents new beginnings, having faith in the future, and being inexperienced.",
       card: `
-   ┌────────┐
-   │  0     │
-   │ ⋆✧⋆✧   │
-   │  ◠     │
-   │   ⋆    │
-   │  / \\   │
-   └────────┘`,
-      meaning: {
-        keywords: ["innocence", "adventure", "potential"],
-        description: "The Fool represents new beginnings, having faith in the future, and being inexperienced."
-      }
+  ┌────────┐
+  │  0     │
+  │ ⋆✧⋆✧   │
+  │  ◠     │
+  │   ⋆    │
+  │  / \\   │
+  └────────┘`
     },
     reversed: {
-      title: "The Fool Reversed", 
+      title: "the fool reversed",
+      description: "the fool reversed warns against being reckless, taking unnecessary risks, and acting without thought.",
       card: `
-   ┌────────┐
-   │   / \\  │
-   │    ⋆   │
-   │    ◡   │
-   │  ⋆✧⋆✧  │
-   │     0  │
-   └────────┘`,
-      meaning: {
-        keywords: ["recklessness", "naivety", "risk"],
-        description: "The Fool Reversed warns against being reckless, taking unnecessary risks, and acting without thought."
-      }
+  ┌────────┐
+  │   / \\  │
+  │    ⋆   │
+  │    ◡   │
+  │  ⋆✧⋆✧  │
+  │     0  │
+  └────────┘`
     }
   },
-  "The Magician": {
+  "the magician": {
     upright: {
-      title: "The Magician",
+      title: "the magician",
+      description: "the magician signifies creativity, self-confidence, and the ability to manifest one's desires.",
       card: `
-   ┌────────┐
-   │  I     │
-   │  ∞     │
-   │  ⚡    │
-   │  ⭒     │
-   │  ⚕     │
-   └────────┘`,
-      meaning: {
-        keywords: ["power", "skill", "concentration"],
-        description: "The Magician signifies creativity, self-confidence, and the ability to manifest one's desires."
-      }
+  ┌────────┐
+  │  I     │
+  │  ∞     │
+  │  ⚡    │
+  │  ⭒     │
+  │  ⚕     │
+  └────────┘`
     },
     reversed: {
-      title: "The Magician Reversed",
+      title: "the magician reversed",
+      description: "the magician reversed indicates deceit, lack of planning, and not using one's skills to their full potential.",
       card: `
-   ┌────────┐
-   │  ⚕     │
-   │  ⭒     │
-   │  ⚡    │
-   │  ∞     │
-   │  I     │
-   └────────┘`,
-      meaning: {
-        keywords: ["manipulation", "poor planning", "untapped talents"],
-        description: "The Magician Reversed indicates deceit, lack of planning, and not using one's skills to their full potential."
-      }
+  ┌────────┐
+  │  ⚕     │
+  │  ⭒     │
+  │  ⚡    │
+  │  ∞     │
+  │  I     │
+  └────────┘`
     }
   },
-  "The High Priestess": {
+  "the high priestess": {
     upright: {
-      title: "The High Priestess",
+      title: "the high priestess",
+      description: "the high priestess represents wisdom, intuition, and the ability to see beyond the obvious.",
       card: `
-   ┌────────┐
-   │  II    │
-   │  ☽     │
-   │  ⚜     │
-   │  ✧     │
-   │  ☾     │
-   └────────┘`,
-      meaning: {
-        keywords: ["intuition", "unconscious", "mystery"],
-        description: "The High Priestess represents wisdom, intuition, and the ability to see beyond the obvious."
-      }
+  ┌────────┐
+  │  II    │
+  │  ☽     │
+  │  ⚜     │
+  │  ✧     │
+  │  ☾     │
+  └────────┘`
     },
     reversed: {
-      title: "The High Priestess Reversed",
+      title: "the high priestess reversed",
+      description: "the high priestess reversed suggests hidden agendas, lack of insight, and feeling disconnected from one's intuition.",
       card: `
-   ┌────────┐
-   │  ☾     │
-   │  ✧     │
-   │  ⚜     │
-   │  ☽     │
-   │  II    │
-   └────────┘`,
-      meaning: {
-        keywords: ["secrets", "disconnected", "withdrawal"],
-        description: "The High Priestess Reversed suggests hidden agendas, lack of insight, and feeling disconnected from one's intuition."
-      }
+  ┌────────┐
+  │  ☾     │
+  │  ✧     │
+  │  ⚜     │
+  │  ☽     │
+  │  II    │
+  └────────┘`
     }
   },
-  "The Empress": {
+  "the empress": {
     upright: {
-      title: "The Empress",
+      title: "the empress",
+      description: "the empress signifies growth, creativity, and the nurturing aspects of life.",
       card: `
-   ┌────────┐
-   │  III   │
-   │  ♀     │
-   │  ❀     │
-   │  ⚘     │
-   │  ❦     │
-   └────────┘`,
-      meaning: {
-        keywords: ["fertility", "abundance", "nurturing"],
-        description: "The Empress signifies growth, creativity, and the nurturing aspects of life."
-      }
+  ┌────────┐
+  │  III   │
+  │  ♀     │
+  │  ❀     │
+  │  ⚘     │
+  │  ❦     │
+  └────────┘`
     },
     reversed: {
-      title: "The Empress Reversed",
+      title: "the empress reversed",
+      description: "the empress reversed indicates dependence on others, neglect, and creative blocks.",
       card: `
-   ┌────────┐
-   │  ❦     │
-   │  ⚘     │
-   │  ❀     │
-   │  ♀     │
-   │  III   │
-   └────────┘`,
-      meaning: {
-        keywords: ["dependence", "neglect", "creative block"],
-        description: "The Empress Reversed indicates dependence on others, neglect, and creative blocks."
-      }
+  ┌────────┐
+  │  ❦     │
+  │  ⚘     │
+  │  ❀     │
+  │  ♀     │
+  │  III   │
+  └────────┘`
     }
   },
-  "The Emperor": {
+  "the emperor": {
     upright: {
-      title: "The Emperor",
+      title: "the emperor",
+      description: "the emperor represents authority, structure, and the power to achieve goals.",
       card: `
-   ┌────────┐
-   │  IV    │
-   │  ♂     │
-   │  ⚔     │
-   │  ♦     │
-   │  ⚜     │
-   └────────┘`,
-      meaning: {
-        keywords: ["authority", "structure", "control"],
-        description: "The Emperor represents authority, structure, and the power to achieve goals."
-      }
+  ┌────────┐
+  │  IV    │
+  │  ♂     │
+  │  ⚔     │
+  │  ♦     │
+  │  ⚜     │
+  └────────┘`
     },
     reversed: {
-      title: "The Emperor Reversed",
+      title: "the emperor reversed",
+      description: "the emperor reversed suggests abuse of power, rigidity, and lack of discipline.",
       card: `
-   ┌────────┐
-   │  ⚜     │
-   │  ♦     │
-   │  ⚔     │
-   │  ♂     │
-   │  IV    │
-   └────────┘`,
-      meaning: {
-        keywords: ["tyranny", "rigidity", "lack of discipline"],
-        description: "The Emperor Reversed suggests abuse of power, rigidity, and lack of discipline."
-      }
+  ┌────────┐
+  │  ⚜     │
+  │  ♦     │
+  │  ⚔     │
+  │  ♂     │
+  │  IV    │
+  └────────┘`
     }
   },
-  "The Hierophant": {
+  "the hierophant": {
     upright: {
-      title: "The Hierophant",
+      title: "the hierophant",
+      description: "the hierophant represents tradition, conformity, and spiritual guidance.",
       card: `
-   ┌────────┐
-   │  V     │
-   │  ✟     │
-   │  ☨     │
-   │  ✞     │
-   │  ⚜     │
-   └────────┘`,
-      meaning: {
-        keywords: ["tradition", "conformity", "spirituality"],
-        description: "The Hierophant represents tradition, conformity, and spiritual guidance."
-      }
+  ┌────────┐
+  │  V     │
+  │  ✟     │
+  │  ☨     │
+  │  ✞     │
+  │  ⚜     │
+  └────────┘`
     },
     reversed: {
-      title: "The Hierophant Reversed",
+      title: "the hierophant reversed",
+      description: "the hierophant reversed indicates rebellion against tradition, subversiveness, and seeking new approaches.",
       card: `
-   ┌────────┐
-   │  ⚜     │
-   │  ✞     │
-   │  ☨     │
-   │  ✟     │
-   │  V     │
-   └────────┘`,
-      meaning: {
-        keywords: ["rebellion", "subversiveness", "new approaches"],
-        description: "The Hierophant Reversed indicates rebellion against tradition, subversiveness, and seeking new approaches."
-      }
-    },
-    "The Lovers": {
-      upright: {
-        title: "The Lovers",
-        card: `
-   ┌────────┐
-   │  VI    │
-   │  ♡     │
-   │  ∞     │
-   │  ☁     │
-   │  ♥     │
-   └────────┘`,
-        meaning: {
-          keywords: ["love", "harmony", "relationships"],
-          description: "The Lovers signify deep connections, harmony, and important relationships."
-        }
-      },
-      reversed: {
-        title: "The Lovers Reversed",
-        card: `
-   ┌────────┐
-   │  ♥     │
-   │  ☁     │
-   │  ∞     │
-   │  ♡     │
-   │  VI    │
-   └────────┘`,
-        meaning: {
-          keywords: ["imbalance", "misalignment", "conflict"],
-          description: "The Lovers Reversed suggests disharmony, misalignment in relationships, and conflicts."
-        }
-      }
-    },
-    "The Chariot": {
-      upright: {
-        title: "The Chariot",
-        card: `
-   ┌────────┐
-   │  VII   │
-   │  ⚡    │
-   │  ☸     │
-   │  ⚔     │
-   │  ⚜     │
-   └────────┘`,
-        meaning: {
-          keywords: ["victory", "willpower", "determination"],
-          description: "The Chariot represents triumph, willpower, and determination to achieve goals."
-        }
-      },
-      reversed: {
-        title: "The Chariot Reversed",
-        card: `
-   ┌────────┐
-   │  ⚜     │
-   │  ⚔     │
-   │  ☸     │
-   │  ⚡     │
-   │  VII   │
-   └────────┘`,
-        meaning: {
-          keywords: ["lack of control", "directionless", "defeat"],
-          description: "The Chariot Reversed indicates a lack of control, feeling directionless, and potential defeat."
-        }
-      }
-    },
-    "The Star": {
-      upright: {
-        title: "The Star",
-        card: `
-   ┌────────┐
-   │  XVII  │
-   │  ✦     │
-   │  🌟     │
-   │  ✧     │
-   │  ⚜     │
-   └────────┘`,
-        meaning: {
-          keywords: ["hope", "faith", "renewal"],
-          description: "The Star signifies hope, faith, and a sense of renewal."
-        }
-      },
-      reversed: {
-        title: "The Star Reversed",
-        card: `
-   ┌────────┐
-   │  ⚜     │
-   │  ✧     │
-   │  🌟     │
-   │  ✦     │
-   │  XVII  │
-   └────────┘`,
-        meaning: {
-          keywords: ["despair", "disconnection", "lack of faith"],
-          description: "The Star Reversed indicates despair, disconnection, and lack of faith."
-        }
-      }
+  ┌────────┐
+  │  ⚜     │
+  │  ✞     │
+  │  ☨     │
+  │  ✟     │
+  │  V     │
+  └────────┘`
     }
   },
-  "The Lovers": {
+  "the lovers": {
     upright: {
-      title: "The Lovers",
+      title: "the lovers",
+      description: "the lovers signify deep connections, harmony, and important relationships.",
       card: `
-   ┌────────┐
-   │  VI    │
-   │  ♡     │
-   │  ∞     │
-   │  ☁     │
-   │  ♥     │
-   └────────┘`,
-      meaning: {
-        keywords: ["love", "harmony", "relationships"],
-        description: "The Lovers signify deep connections, harmony, and important relationships."
-      }
+  ┌────────┐
+  │  VI    │
+  │  ♡     │
+  │  ∞     │
+  │  ☁     │
+  │  ♥     │
+  └────────┘`
     },
     reversed: {
-      title: "The Lovers Reversed",
+      title: "the lovers reversed",
+      description: "the lovers reversed suggests disharmony, misalignment in relationships, and conflicts.",
       card: `
-   ┌────────┐
-   │  ♥     │
-   │  ☁     │
-   │  ∞     │
-   │  ♡     │
-   │  VI    │
-   └────────┘`,
-      meaning: {
-        keywords: ["imbalance", "misalignment", "conflict"],
-        description: "The Lovers Reversed suggests disharmony, misalignment in relationships, and conflicts."
-      }
+  ┌────────┐
+  │  ♥     │
+  │  ☁     │
+  │  ∞     │
+  │  ♡     │
+  │  VI    │
+  └────────┘`
     }
   },
-  "The Chariot": {
+  "the chariot": {
     upright: {
-      title: "The Chariot",
+      title: "the chariot",
+      description: "the chariot represents triumph, willpower, and determination to achieve goals.",
       card: `
-   ┌────────┐
-   │  VII   │
-   │  ⚡    │
-   │  ☸     │
-   │  ⚔     │
-   │  ⚜     │
-   └────────┘`,
-      meaning: {
-        keywords: ["victory", "willpower", "determination"],
-        description: "The Chariot represents triumph, willpower, and determination to achieve goals."
-      }
+  ┌────────┐
+  │  VII   │
+  │  ⚡    │
+  │  ☸     │
+  │  ⚔     │
+  │  ⚜     │
+  └────────┘`
     },
     reversed: {
-      title: "The Chariot Reversed",
+      title: "the chariot reversed",
+      description: "the chariot reversed indicates lack of control, aggression, and self-doubt.",
       card: `
-   ┌────────┐
-   │  ⚜     │
-   │  ⚔     │
-   │  ☸     │
-   │  ⚡    │
-   │  VII   │
-   └────────┘`,
-      meaning: {
-        keywords: ["lack of control", "aggression", "self-doubt"],
-        description: "The Chariot Reversed indicates lack of control, aggression, and self-doubt."
-      }
+  ┌────────┐
+  │  ⚜     │
+  │  ⚔     │
+  │  ☸     │
+  │  ⚡    │
+  │  VII   │
+  └────────┘`
     }
   },
-  "Strength": {
+  "strength": {
     upright: {
-      title: "Strength",
+      title: "strength",
+      description: "strength signifies inner strength, courage, and compassion.",
       card: `
-   ┌────────┐
-   │  VIII  │
-   │  ∞     │
-   │  ♌    │
-   │  ⚔     │
-   │  ❤     │
-   └────────┘`,
-      meaning: {
-        keywords: ["courage", "patience", "compassion"],
-        description: "Strength signifies inner strength, courage, and compassion."
-      }
+  ┌────────┐
+  │  VIII  │
+  │  ∞     │
+  │  ♌    │
+  │  ⚔     │
+  │  ❤     │
+  └────────┘`
     },
     reversed: {
-      title: "Strength Reversed",
+      title: "strength reversed",
+      description: "strength reversed suggests weakness, self-doubt, and lack of discipline.",
       card: `
-   ┌────────┐
-   │  ❤     │
-   │  ⚔     │
-   │  ♌    │
-   │  ∞     │
-   │  VIII  │
-   └────────┘`,
-      meaning: {
-        keywords: ["weakness", "self-doubt", "lack of discipline"],
-        description: "Strength Reversed suggests weakness, self-doubt, and lack of discipline."
-      }
+  ┌────────┐
+  │  ❤     │
+  │  ⚔     │
+  │  ♌    │
+  │  ∞     │
+  │  VIII  │
+  └────────┘`
     }
   },
-  "The Hermit": {
+  "the hermit": {
     upright: {
-      title: "The Hermit",
+      title: "the hermit",
+      description: "the hermit represents introspection, seeking solitude, and inner guidance.",
       card: `
-   ┌────────┐
-   │  IX    │
-   │  ✧     │
-   │  ☽     │
-   │  ⚡    │
-   │  ✦     │
-   └────────┘`,
-      meaning: {
-        keywords: ["introspection", "solitude", "guidance"],
-        description: "The Hermit represents introspection, seeking solitude, and inner guidance."
-      }
+  ┌────────┐
+  │  IX    │
+  │  ✧     │
+  │  ☽     │
+  │  ⚡    │
+  │  ✦     │
+  └────────┘`
     },
     reversed: {
-      title: "The Hermit Reversed",
+      title: "the hermit reversed",
+      description: "the hermit reversed indicates isolation, withdrawal from others, and loneliness.",
       card: `
-   ┌────────┐
-   │  ✦     │
-   │  ⚡    │
-   │  ☽     │
-   │  ✧     │
-   │  IX    │
-   └────────┘`,
-      meaning: {
-        keywords: ["isolation", "withdrawal", "loneliness"],
-        description: "The Hermit Reversed indicates isolation, withdrawal from others, and loneliness."
-      }
+  ┌────────┐
+  │  ✦     │
+  │  ⚡    │
+  │  ☽     │
+  │  ✧     │
+  │  IX    │
+  └────────┘`
     }
   },
-  "Wheel of Fortune": {
+  "wheel of fortune": {
     upright: {
-      title: "Wheel of Fortune",
+      title: "wheel of fortune",
+      description: "wheel of fortune signifies change, cycles of life, and fate.",
       card: `
-   ┌────────┐
-   │  X     │
-   │  ⚙     │
-   │  ☸     │
-   │  ✧     │
-   │  ∞     │
-   └────────┘`,
-      meaning: {
-        keywords: ["change", "cycles", "fate"],
-        description: "Wheel of Fortune signifies change, cycles of life, and fate."
-      }
+  ┌────────┐
+  │  X     │
+  │  ⚙     │
+  │  ☸     │
+  │  ✧     │
+  │  ∞     │
+  └────────┘`
     },
     reversed: {
-      title: "Wheel of Fortune Reversed",
+      title: "wheel of fortune reversed",
+      description: "wheel of fortune reversed suggests bad luck, resistance to change, and unwelcome changes.",
       card: `
-   ┌────────┐
-   │  ∞     │
-   │  ✧     │
-   │  ☸     │
-   │  ⚙     │
-   │  X     │
-   └────────┘`,
-      meaning: {
-        keywords: ["bad luck", "resistance", "unwelcome change"],
-        description: "Wheel of Fortune Reversed suggests bad luck, resistance to change, and unwelcome changes."
-      }
+  ┌────────┐
+  │  ∞     │
+  │  ✧     │
+  │  ☸     │
+  │  ⚙     │
+  │  X     │
+  └────────┘`
     }
   },
-  "Justice": {
+  "justice": {
     upright: {
-      title: "Justice",
+      title: "justice",
+      description: "justice represents fairness, truth, and the law.",
       card: `
-   ┌────────┐
-   │  XI    │
-   │  ⚖     │
-   │  ⚔     │
-   │  ☤     │
-   │  ⚜     │
-   └────────┘`,
-      meaning: {
-        keywords: ["fairness", "truth", "law"],
-        description: "Justice represents fairness, truth, and the law."
-      }
+  ┌────────┐
+  │  XI    │
+  │  ⚖     │
+  │  ⚔     │
+  │  ☤     │
+  │  ⚜     │
+  └────────┘`
     },
     reversed: {
-      title: "Justice Reversed",
+      title: "justice reversed",
+      description: "justice reversed indicates injustice, dishonesty, and unfairness.",
       card: `
-   ┌────────┐
-   │  ⚜     │
-   │  ☤     │
-   │  ⚔     │
-   │  ⚖     │
-   │  XI    │
-   └────────┘`,
-      meaning: {
-        keywords: ["injustice", "dishonesty", "unfairness"],
-        description: "Justice Reversed indicates injustice, dishonesty, and unfairness."
-      }
+  ┌────────┐
+  │  ⚜     │
+  │  ☤     │
+  │  ⚔     │
+  │  ⚖     │
+  │  XI    │
+  └────────┘`
     }
   },
-  "The Hanged Man": {
+  "the hanged man": {
     upright: {
-      title: "The Hanged Man",
+      title: "the hanged man",
+      description: "the hanged man signifies sacrifice, letting go, and gaining a new perspective.",
       card: `
-   ┌────────┐
-   │  XII   │
-   │  ⅄     │
-   │  ✝     │
-   │  ☯     │
-   │  ⚜     │
-   └────────┘`,
-      meaning: {
-        keywords: ["sacrifice", "release", "perspective"],
-        description: "The Hanged Man signifies sacrifice, letting go, and gaining a new perspective."
-      }
+  ┌────────┐
+  │  XII   │
+  │  ⅄     │
+  │  ✝     │
+  │  ☯     │
+  │  ⚜     │
+  └────────┘`
     },
     reversed: {
-      title: "The Hanged Man Reversed",
+      title: "the hanged man reversed",
+      description: "the hanged man reversed suggests stalling, indecision, and delays.",
       card: `
-   ┌────────┐
-   │  ⚜     │
-   │  ☯     │
-   │  ✝     │
-   │  ⅄     │
-   │  XII   │
-   └────────┘`,
-      meaning: {
-        keywords: ["stalling", "indecision", "delay"],
-        description: "The Hanged Man Reversed suggests stalling, indecision, and delays."
-      }
+  ┌────────┐
+  │  ⚜     │
+  │  ☯     │
+  │  ✝     │
+  │  ⅄     │
+  │  XII   │
+  └────────┘`
     }
   },
-  "Death": {
+  "death": {
     upright: {
-      title: "Death",
+      title: "death",
+      description: "death represents transformation, endings, and significant change.",
       card: `
-   ┌────────┐
-   │  XIII  │
-   │  ☠     │
-   │  ⚰     │
-   │  ✞     │
-   │  ⚜     │
-   └────────┘`,
-      meaning: {
-        keywords: ["transformation", "endings", "change"],
-        description: "Death represents transformation, endings, and significant change."
-      }
+  ┌────────┐
+  │  XIII  │
+  │  ☠     │
+  │  ⚰     │
+  │  ✞     │
+  │  ⚜     │
+  └────────┘`
     },
     reversed: {
-      title: "Death Reversed",
+      title: "death reversed",
+      description: "death reversed indicates resistance to change, stagnation, and fear of change.",
       card: `
-   ┌────────┐
-   │  ⚜     │
-   │  ✞     │
-   │  ⚰     │
-   │  ☠     │
-   │  XIII  │
-   └────────┘`,
-      meaning: {
-        keywords: ["resistance", "stagnation", "fear of change"],
-        description: "Death Reversed indicates resistance to change, stagnation, and fear of change."
-      }
+  ┌────────┐
+  │  ⚜     │
+  │  ✞     │
+  │  ⚰     │
+  │  ☠     │
+  │  XIII  │
+  └────────┘`
     }
   },
-  "Temperance": {
+  "temperance": {
     upright: {
-      title: "Temperance",
+      title: "temperance",
+      description: "temperance signifies balance, moderation, and patience.",
       card: `
-   ┌────────┐
-   │  XIV   │
-   │  ⚖     │
-   │  ∞     │
-   │  ☯     │
-   │  ⚜     │
-   └────────┘`,
-      meaning: {
-        keywords: ["balance", "moderation", "patience"],
-        description: "Temperance signifies balance, moderation, and patience."
-      }
+  ┌────────┐
+  │  XIV   │
+  │  ⚖     │
+  │  ∞     │
+  │  ☯     │
+  │  ⚜     │
+  └────────┘`
     },
     reversed: {
-      title: "Temperance Reversed",
+      title: "temperance reversed",
+      description: "temperance reversed suggests imbalance, excess, and lack of harmony.",
       card: `
-   ┌────────┐
-   │  ⚜     │
-   │  ☯     │
-   │  ∞     │
-   │  ⚖     │
-   │  XIV   │
-   └────────┘`,
-      meaning: {
-        keywords: ["imbalance", "excess", "lack of harmony"],
-        description: "Temperance Reversed suggests imbalance, excess, and lack of harmony."
-      }
+  ┌────────┐
+  │  ⚜     │
+  │  ☯     │
+  │  ∞     │
+  │  ⚖     │
+  │  XIV   │
+  └────────┘`
     }
   },
-  "The Devil": {
+  "the devil": {
     upright: {
-      title: "The Devil",
+      title: "the devil",
+      description: "the devil represents addiction, materialism, and feeling trapped.",
       card: `
-   ┌────────┐
-   │  XV    │
-   │  ⛧     │
-   │  ♄     │
-   │  ⚔     │
-   │  ⚜     │
-   └────────┘`,
-      meaning: {
-        keywords: ["addiction", "materialism", "bondage"],
-        description: "The Devil represents addiction, materialism, and feeling trapped."
-      }
+  ┌────────┐
+  │  XV    │
+  │  ⛧     │
+  │  ♄     │
+  │  ⚔     │
+  │  ⚜     │
+  └────────┘`
     },
     reversed: {
-      title: "The Devil Reversed",
+      title: "the devil reversed",
+      description: "the devil reversed indicates breaking free, release from bondage, and restoration of control.",
       card: `
-   ┌────────┐
-   │  ⚜     │
-   │  ⚔     │
-   │  ♄     │
-   │  ⛧     │
-   │  XV    │
-   └────────┘`,
-      meaning: {
-        keywords: ["freedom", "release", "restoration"],
-        description: "The Devil Reversed indicates breaking free, release from bondage, and restoration of control."
-      }
+  ┌────────┐
+  │  ⚜     │
+  │  ⚔     │
+  │  ♄     │
+  │  ⛧     │
+  │  XV    │
+  └────────┘`
     }
   },
-  "The Tower": {
+  "the tower": {
     upright: {
-      title: "The Tower",
+      title: "the tower",
+      description: "the tower signifies sudden upheaval, disaster, and revelation.",
       card: `
-   ┌────────┐
-   │  XVI   │
-   │  ⚡    │
-   │  ▲     │
-   │  ☄     │
-   │  ⚜     │
-   └────────┘`,
-      meaning: {
-        keywords: ["upheaval", "disaster", "revelation"],
-        description: "The Tower signifies sudden upheaval, disaster, and revelation."
-      }
+  ┌────────┐
+  │  XVI   │
+  │  ⚡    │
+  │  ▲     │
+  │  ☄     │
+  │  ⚜     │
+  └────────┘`
     },
     reversed: {
-      title: "The Tower Reversed",
+      title: "the tower reversed",
+      description: "the tower reversed suggests resistance to change, fear of change, and narrowly avoiding disaster.",
       card: `
-   ┌────────┐
-   │  ⚜     │
-   │  ☄     │
-   │  ▲     │
-   │  ⚡    │
-   │  XVI   │
-   └────────┘`,
-      meaning: {
-        keywords: ["resistance", "fear of change", "averted disaster"],
-        description: "The Tower Reversed suggests resistance to change, fear of change, and narrowly avoiding disaster."
-      }
+  ┌────────┐
+  │  ⚜     │
+  │  ☄     │
+  │  ▲     │
+  │  ⚡    │
+  │  XVI   │
+  └────────┘`
     }
   },
-  "The Star": {
+  "the star": {
     upright: {
-      title: "The Star",
+      title: "the star",
+      description: "the star represents hope, inspiration, and serenity.",
       card: `
-   ┌────────┐
-   │  XVII  │
-   │  ★     │
-   │  ✧     │
-   │  ⭐    │
-   │  ✦     │
-   └────────┘`,
-      meaning: {
-        keywords: ["hope", "inspiration", "serenity"],
-        description: "The Star represents hope, inspiration, and serenity."
-      }
+  ┌────────┐
+  │  XVII  │
+  │  ★     │
+  │  ✧     │
+  │  ⭐    │
+  │  ✦     │
+  └────────┘`
     },
     reversed: {
-      title: "The Star Reversed",
+      title: "the star reversed",
+      description: "the star reversed indicates despair, disconnection, and lack of faith.",
       card: `
-   ┌────────┐
-   │  ✦     │
-   │  ⭐    │
-   │  ✧     │
-   │  ★     │
-   │  XVII  │
-   └────────┘`,
-      meaning: {
-        keywords: ["despair", "disconnection", "lack of faith"],
-        description: "The Star Reversed indicates despair, disconnection, and lack of faith."
-      }
+  ┌────────┐
+  │  ✦     │
+  │  ⭐    │
+  │  ✧     │
+  │  ★     │
+  │  XVII  │
+  └────────┘`
     }
   },
-  "The Moon": {
+  "the moon": {
     upright: {
-      title: "The Moon",
+      title: "the moon",
+      description: "the moon signifies illusion, intuition, and fear of the unknown.",
       card: `
-   ┌────────┐
-   │  XVIII │
-   │  ☽     │
-   │  ◑     │
-   │  ☾     │
-   │  ◐     │
-   └────────┘`,
-      meaning: {
-        keywords: ["illusion", "intuition", "fear"],
-        description: "The Moon signifies illusion, intuition, and fear of the unknown."
-      }
+  ┌────────┐
+  │  XVIII │
+  │  ☽     │
+  │  ◑     │
+  │  ☾     │
+  │  ◐     │
+  └────────┘`
     },
     reversed: {
-      title: "The Moon Reversed",
+      title: "the moon reversed",
+      description: "the moon reversed indicates deception, manipulation, and hidden agendas.",
       card: `
-   ┌────────┐
-   │  ◐     │
-   │  ☾     │
-   │  ◑     │
-   │  ☽     │
-   │  XVIII │
-   └────────┘`
+  ┌────────┐
+  │  ◐     │
+  │  ☾     │
+  │  ◑     │
+  │  ☽     │
+  │  XVIII │
+  └────────┘`
     }
   },
-  "The Sun": {
+  "the sun": {
     upright: {
-      title: "The Sun",
+      title: "the sun",
+      description: "the sun embodies boundless joy, radiant clarity, and the triumph of enlightenment, signifying success, vitality, and the illumination of the soul’s true purpose on its journey.",
       card: `
-   ┌────────┐
-   │  XIX   │
-   │  ☀     │
-   │  ☼     │
-   │  ✺     │
-   │  ⚜     │
-   └────────┘`
+  ┌────────┐
+  │  XIX   │
+  │  ☀     │
+  │  ☼     │
+  │  ✺     │
+  │  ⚜     │
+  └────────┘`
     },
     reversed: {
-      title: "The Sun Reversed",
+      title: "the sun reversed",
+      description: "the sun reversed signifies temporary setbacks, doubt, or a diminished sense of optimism.",
       card: `
-   ┌────────┐
-   │  ⚜     │
-   │  ✺     │
-   │  ☼     │
-   │  ☀     │
-   │  XIX   │
-   └────────┘`
+  ┌────────┐
+  │  ⚜     │
+  │  ✺     │
+  │  ☼     │
+  │  ☀     │
+  │  XIX   │
+  └────────┘`
     }
   },
-  "Judgement": {
+  "judgement": {
     upright: {
-      title: "Judgement",
+      title: "judgement",
+      description: "judgement represents spiritual awakening, self-evaluation.",
       card: `
-   ┌────────┐
-   │  XX    │
-   │  ☧     │
-   │  ✝     │
-   │  ⚖     │
-   │  ⚜     │
-   └────────┘`
+  ┌────────┐
+  │  XX    │
+  │  ☧     │
+  │  ✝     │
+  │  ⚖     │
+  │  ⚜     │
+  └────────┘`
     },
     reversed: {
-      title: "Judgement Reversed",
+      title: "judgement reversed",
+      description: "judgement reversed signifies doubt, avoidance, or resistance to personal accountability.",
       card: `
-   ┌────────┐
-   │  ⚜     │
-   │  ⚖     │
-   │  ✝     │
-   │  ☧     │
-   │  XX    │
-   └────────┘`
+  ┌────────┐
+  │  ⚜     │
+  │  ⚖     │
+  │  ✝     │
+  │  ☧     │
+  │  XX    │
+  └────────┘`
     }
   },
-  "The World": {
+  "the world": {
     upright: {
-      title: "The World",
+      title: "the world",
+      description: "the world signifies completion, fulfillment, and unity; it can represent the end of a life cycle and the start of a new one.",
       card: `
-   ┌────────┐
-   │  XXI   │
-   │  ⊕     │
-   │  ☯     │
-   │  ∞     │
-   │  ⚜     │
-   └────────┘`
+  ┌────────┐
+  │  XXI   │
+  │  ⊕     │
+  │  ☯     │
+  │  ∞     │
+  │  ⚜     │
+  └────────┘`
     },
     reversed: {
-      title: "The World Reversed",
+      title: "the world reversed",
+      description: "the world reversed suggests stagnation, unfulfilled goals, or a lack of closure.",
       card: `
-   ┌────────┐
-   │  ⚜     │
-   │  ∞     │
-   │  ☯     │
-   │  ⊕     │
-   │  XXI   │
-   └────────┘`
+  ┌────────┐
+  │  ⚜     │
+  │  ∞     │
+  │  ☯     │
+  │  ⊕     │
+  │  XXI   │
+  └────────┘`
     }
   },
-  
-  // Wands Suite
-  "Ace of Wands": {
+    // wands suit and their reversed cards
+    "ace of wands": {
     upright: {
-      title: "Ace of Wands",
+      title: "ace of wands",
+      description: "the ace of wands symbolizes inspiration, creative potential, and the spark of new ideas.",
       card: `
-   ┌────────┐
-   │  A     │
-   │  ⚡    │
-   │  ♠     │
-   │  ✦     │
-   │  W     │
-   └────────┘`
+    ┌────────┐
+    │  A     │
+    │  ⚡    │
+    │  ♠     │
+    │  ✦     │
+    │  W     │
+    └────────┘`
     },
     reversed: {
-      title: "Ace of Wands Reversed",
+      title: "ace of wands reversed",
+      description: "the ace of wands reversed represents delays, lack of motivation, or creative blocks.",
       card: `
-   ┌────────┐
-   │  W     │
-   │  ✦     │
-   │  ♠     │
-   │  ⚡    │
-   │  A     │
-   └────────┘`
+    ┌────────┐
+    │  W     │
+    │  ✦     │
+    │  ♠     │
+    │  ⚡    │
+    │  A     │
+    └────────┘`
     }
   },
-  "Two of Wands": {
+  "two of wands": {
     upright: {
-      title: "Two of Wands",
+      title: "two of wands",
+      description: "the two of wands represents planning, decision-making, and taking initial steps toward a goal.",
       card: `
-   ┌────────┐
-   │  2     │
-   │  ⚡    │
-   │  ♠♠    │
-   │  ✦     │
-   │  W     │
-   └────────┘`
+    ┌────────┐
+    │  2     │
+    │  ⚡    │
+    │  ♠♠    │
+    │  ✦     │
+    │  W     │
+    └────────┘`
     },
     reversed: {
-      title: "Two of Wands Reversed",
+      title: "two of wands reversed",
+      description: "the two of wands reversed suggests indecision, fear of change, or a lack of clear direction.",
       card: `
-   ┌────────┐
-   │  W     │
-   │  ✦     │
-   │  ♠♠    │
-   │  ⚡    │
-   │  2     │
-   └────────┘`
+    ┌────────┐
+    │  W     │
+    │  ✦     │
+    │  ♠♠    │
+    │  ⚡    │
+    │  2     │
+    └────────┘`
     }
   },
-  "Three of Wands": {
+  "three of wands": {
     upright: {
-      title: "Three of Wands",
+      title: "three of wands",
+      description: "the three of wands signifies expansion, foresight, and opportunities on the horizon.",
       card: `
-   ┌────────┐
-   │  3     │
-   │  ⚡    │
-   │  ♠♠♠   │
-   │  ✦     │
-   │  W     │
-   └────────┘`
+    ┌────────┐
+    │  3     │
+    │  ⚡    │
+    │  ♠♠♠   │
+    │  ✦     │
+    │  W     │
+    └────────┘`
     },
     reversed: {
-      title: "Three of Wands Reversed",
+      title: "three of wands reversed",
+      description: "the three of wands reversed points to delays, setbacks, or a lack of progress in plans.",
       card: `
-   ┌────────┐
-   │  W     │
-   │  ✦     │
-   │  ♠♠♠   │
-   │  ⚡    │
-   │  3     │
-   └────────┘`
+    ┌────────┐
+    │  W     │
+    │  ✦     │
+    │  ♠♠♠   │
+    │  ⚡    │
+    │  3     │
+    └────────┘`
     }
   },
-  "Four of Wands": {
+  "four of wands": {
     upright: {
-      title: "Four of Wands",
+      title: "four of wands",
+      description: "the four of wands represents celebration, harmony, and a sense of community or achievement.",
       card: `
-   ┌────────┐
-   │  4     │
-   │  ⚡    │
-   │  ♠♠    │
-   │  ♠♠    │
-   │  W     │
-   └────────┘`
+    ┌────────┐
+    │  4     │
+    │  ⚡    │
+    │  ♠♠    │
+    │  ♠♠    │
+    │  W     │
+    └────────┘`
     },
     reversed: {
-      title: "Four of Wands Reversed",
+      title: "four of wands reversed",
+      description: "the four of wands reversed suggests instability, lack of support, or delayed celebrations.",
       card: `
-   ┌────────┐
-   │  W     │
-   │  ♠♠    │
-   │  ♠♠    │
-   │  ⚡    │
-   │  4     │
-   └────────┘`
+    ┌────────┐
+    │  W     │
+    │  ♠♠    │
+    │  ♠♠    │
+    │  ⚡    │
+    │  4     │
+    └────────┘`
     }
   },
-  "Five of Wands": {
+  "five of wands": {
     upright: {
-      title: "Five of Wands",
+      title: "five of wands",
+      description: "the five of wands symbolizes conflict, competition, or a struggle for power.",
       card: `
-   ┌────────┐
-   │  5     │
-   │  ⚡    │
-   │  ♠♠♠   │
-   │  ♠♠    │
-   │  W     │
-   └────────┘`
+    ┌────────┐
+    │  5     │
+    │  ⚡    │
+    │  ♠♠♠   │
+    │  ♠♠    │
+    │  W     │
+    └────────┘`
     },
     reversed: {
-      title: "Five of Wands Reversed",
+      title: "five of wands reversed",
+      description: "the five of wands reversed points to resolving conflicts, avoiding disputes, or inner struggles.",
       card: `
-   ┌────────┐
-   │  W     │
-   │  ♠♠    │
-   │  ♠♠♠   │
-   │  ⚡    │
-   │  5     │
-   └────────┘`
+    ┌────────┐
+    │  W     │
+    │  ♠♠    │
+    │  ♠♠♠   │
+    │  ⚡    │
+    │  5     │
+    └────────┘`
     }
   },
-  "Six of Wands": {
+  "six of wands": {
     upright: {
-      title: "Six of Wands",
+      title: "six of wands",
+      description: "the six of wands signifies victory, recognition, and achieving success through effort.",
       card: `
-   ┌────────┐
-   │  6     │
-   │  ⚡    │
-   │  ♠♠♠   │
-   │  ♠♠♠   │
-   │  W     │
-   └────────┘`
+    ┌────────┐
+    │  6     │
+    │  ⚡    │
+    │  ♠♠♠   │
+    │  ♠♠♠   │
+    │  W     │
+    └────────┘`
     },
     reversed: {
-      title: "Six of Wands Reversed",
+      title: "six of wands reversed",
+      description: "the six of wands reversed indicates self-doubt, lack of recognition, or struggles despite effort.",
       card: `
-   ┌────────┐
-   │  W     │
-   │  ♠♠♠   │
-   │  ♠♠♠   │
-   │  ⚡    │
-   │  6     │
-   └────────┘`
+    ┌────────┐
+    │  W     │
+    │  ♠♠♠   │
+    │  ♠♠♠   │
+    │  ⚡    │
+    │  6     │
+    └────────┘`
     }
   },
-  "Seven of Wands": {
+  "seven of wands": {
     upright: {
-      title: "Seven of Wands",
+      title: "seven of wands",
+      description: "the seven of wands represents perseverance, defending one's position, and overcoming obstacles.",
       card: `
-   ┌────────┐
-   │  7     │
-   │  ♠♠♠   │
-   │  ♠     │
-   │  ♠♠♠   │
-   │  W     │
-   └────────┘`
+    ┌────────┐
+    │  7     │
+    │  ♠♠♠   │
+    │  ♠     │
+    │  ♠♠♠   │
+    │  W     │
+    └────────┘`
     },
     reversed: {
-      title: "Seven of Wands Reversed",
+      title: "seven of wands reversed",
+      description: "the seven of wands reversed points to feeling overwhelmed, defensiveness, or a lack of confidence.",
       card: `
-   ┌────────┐
-   │  W     │
-   │  ♠♠♠   │
-   │  ♠     │
-   │  ♠♠♠   │
-   │  7     │
-   └────────┘`
+    ┌────────┐
+    │  W     │
+    │  ♠♠♠   │
+    │  ♠     │
+    │  ♠♠♠   │
+    │  7     │
+    └────────┘`
     }
   },
-  "Eight of Wands": {
+  "eight of wands": {
     upright: {
-      title: "Eight of Wands",
+      title: "eight of wands",
+      description: "the eight of wands signifies swift movement, progress, and rapid development toward goals.",
       card: `
-   ┌────────┐
-   │  8     │
-   │  ♠♠♠♠  │
-   │  ⚡    │
-   │  ♠♠♠♠  │
-   │  W     │
-   └────────┘`
+    ┌────────┐
+    │  8     │
+    │  ♠♠♠♠  │
+    │  ⚡    │
+    │  ♠♠♠♠  │
+    │  W     │
+    └────────┘`
     },
     reversed: {
-      title: "Eight of Wands Reversed",
+      title: "eight of wands reversed",
+      description: "the eight of wands reversed represents delays, miscommunication, or a lack of direction in progress.",
       card: `
-   ┌────────┐
-   │  W     │
-   │  ♠♠♠♠  │
-   │  ⚡    │
-   │  ♠♠♠♠  │
-   │  8     │
-   └────────┘`
+    ┌────────┐
+    │  W     │
+    │  ♠♠♠♠  │
+    │  ⚡    │
+    │  ♠♠♠♠  │
+    │  8     │
+    └────────┘`
     }
   },
-  "Nine of Wands": {
+  "nine of wands": {
     upright: {
-      title: "Nine of Wands",
+      title: "nine of wands",
+      description: "the nine of wands represents resilience, persistence, and standing strong despite challenges.",
       card: `
-   ┌────────┐
-   │  9     │
-   │  ♠♠♠   │
-   │  ♠♠♠   │
-   │  ♠♠♠   │
-   │  W     │
-   └────────┘`
+    ┌────────┐
+    │  9     │
+    │  ♠♠♠   │
+    │  ♠♠♠   │
+    │  ♠♠♠   │
+    │  W     │
+    └────────┘`
     },
     reversed: {
-      title: "Nine of Wands Reversed",
+      title: "nine of wands reversed",
+      description: "the nine of wands reversed suggests exhaustion, defensiveness, or feeling overwhelmed by obstacles.",
       card: `
-   ┌────────┐
-   │  W     │
-   │  ♠♠♠   │
-   │  ♠♠♠   │
-   │  ♠♠♠   │
-   │  9     │
-   └────────┘`
+    ┌────────┐
+    │  W     │
+    │  ♠♠♠   │
+    │  ♠♠♠   │
+    │  ♠♠♠   │
+    │  9     │
+    └────────┘`
     }
   },
-  "Ten of Wands": {
+  "ten of wands": {
     upright: {
-      title: "Ten of Wands",
+      title: "ten of wands",
+      description: "the ten of wands symbolizes burden, hard work, and the responsibilities that come with success.",
       card: `
-   ┌────────┐
-   │  10    │
-   │  ♠♠♠♠  │
-   │  ♠♠    │
-   │  ♠♠♠♠  │
-   │  W     │
-   └────────┘`
+    ┌────────┐
+    │  10    │
+    │  ♠♠♠♠  │
+    │  ♠♠    │
+    │  ♠♠♠♠  │
+    │  W     │
+    └────────┘`
     },
     reversed: {
-      title: "Ten of Wands Reversed",
+      title: "ten of wands reversed",
+      description: "the ten of wands reversed indicates release, delegation, or overcoming feelings of overwhelm.",
       card: `
-   ┌────────┐
-   │  W     │
-   │  ♠♠♠♠  │
-   │  ♠♠    │
-   │  ♠♠♠♠  │
-   │  10    │
-   └────────┘`
+    ┌────────┐
+    │  W     │
+    │  ♠♠♠♠  │
+    │  ♠♠    │
+    │  ♠♠♠♠  │
+    │  10    │
+    └────────┘`
     }
   },
-  "Page of Wands": {
+  "page of wands": {
     upright: {
-      title: "Page of Wands",
+      title: "page of wands",
+      description: "the page of wands signifies enthusiasm, curiosity, and the beginning of a creative journey.",
       card: `
-   ┌────────┐
-   │  P     │
-   │  ⚡    │
-   │  ♠     │
-   │  ✧     │
-   │  W     │
-   └────────┘`
+    ┌────────┐
+    │  P     │
+    │  ⚡    │
+    │  ♠     │
+    │  ✧     │
+    │  W     │
+    └────────┘`
     },
     reversed: {
-      title: "Page of Wands Reversed",
+      title: "page of wands reversed",
+      description: "the page of wands reversed represents hesitation, lack of direction, or failed initiatives.",
       card: `
-   ┌────────┐
-   │  W     │
-   │  ✧     │
-   │  ♠     │
-   │  ⚡    │
-   │  P     │
-   └────────┘`
+    ┌────────┐
+    │  W     │
+    │  ✧     │
+    │  ♠     │
+    │  ⚡    │
+    │  P     │
+    └────────┘`
     }
   },
-  "Knight of Wands": {
+  "knight of wands": {
     upright: {
-      title: "Knight of Wands",
+      title: "knight of wands",
+      description: "the knight of wands embodies passion, action, and an adventurous spirit driving forward with ambition.",
       card: `
-   ┌────────┐
-   │  Kn    │
-   │  ⚔     │
-   │  ♠     │
-   │  ⚡    │
-   │  W     │
-   └────────┘`
+    ┌────────┐
+    │  Kn    │
+    │  ⚔     │
+    │  ♠     │
+    │  ⚡    │
+    │  W     │
+    └────────┘`
     },
     reversed: {
-      title: "Knight of Wands Reversed",
+      title: "knight of wands reversed",
+      description: "the knight of wands reversed points to recklessness, impatience, or a lack of follow-through.",
       card: `
-   ┌────────┐
-   │  W     │
-   │  ⚡    │
-   │  ♠     │
-   │  ⚔     │
-   │  Kn    │
-   └────────┘`
+    ┌────────┐
+    │  W     │
+    │  ⚡    │
+    │  ♠     │
+    │  ⚔     │
+    │  Kn    │
+    └────────┘`
     }
   },
-  "Queen of Wands": {
+  "queen of wands": {
     upright: {
-      title: "Queen of Wands",
+      title: "queen of wands",
+      description: "the queen of wands represents confidence, charisma, and the ability to inspire others through passion.",
       card: `
-   ┌────────┐
-   │  Q     │
-   │  ♛     │
-   │  ♠     │
-   │  ⚡    │
-   │  W     │
-   └────────┘`
+    ┌────────┐
+    │  Q     │
+    │  ♛     │
+    │  ♠     │
+    │  ⚡    │
+    │  W     │
+    └────────┘`
     },
     reversed: {
-      title: "Queen of Wands Reversed",
+      title: "queen of wands reversed",
+      description: "the queen of wands reversed suggests insecurity, jealousy, or a misuse of one's influence.",
       card: `
-   ┌────────┐
-   │  W     │
-   │  ⚡    │
-   │  ♠     │
-   │  ♛     │
-   │  Q     │
-   └────────┘`
+    ┌────────┐
+    │  W     │
+    │  ⚡    │
+    │  ♠     │
+    │  ♛     │
+    │  Q     │
+    └────────┘`
     }
   },
-  "King of Wands": {
+  "king of wands": {
     upright: {
-      title: "King of Wands",
+      title: "king of wands",
+      description: "the king of wands signifies leadership, vision, and the ability to inspire and achieve great things.",
       card: `
-   ┌────────┐
-   │  K     │
-   │  ♚     │
-   │  ♠     │
-   │  ⚡    │
-   │  W     │
-   └────────┘`
+    ┌────────┐
+    │  K     │
+    │  ♚     │
+    │  ♠     │
+    │  ⚡    │
+    │  W     │
+    └────────┘`
     },
     reversed: {
-      title: "King of Wands Reversed",
+      title: "king of wands reversed",
+      description: "the king of wands reversed points to arrogance, impulsiveness, or a misuse of authority.",
       card: `
-   ┌────────┐
-   │  W     │
-   │  ⚡    │
-   │  ♠     │
-   │  ♚     │
-   │  K     │
-   └────────┘`
+    ┌────────┐
+    │  W     │
+    │  ⚡    │
+    │  ♠     │
+    │  ♚     │
+    │  K     │
+    └────────┘`
     }
   },
+      // cups suit and their reversed cards
 
-  // Cups Suite
-  "Ace of Cups": {
+  "ace of cups": {
     upright: {
-      title: "Ace of Cups",
+      title: "ace of cups",
+      description: "the ace of cups represents emotional fulfillment, new beginnings in love, and overflowing compassion.",
       card: `
-   ┌────────┐
-   │  A     │
-   │  ♡     │
-   │  ☆     │
-   │  ✧     │
-   │  C     │
-   └────────┘`
+    ┌────────┐
+    │  A     │
+    │  💧    │
+    │  ♡     │
+    │  ✦     │
+    │  C     │
+    └────────┘`
     },
     reversed: {
-      title: "Ace of Cups Reversed",
+      title: "ace of cups reversed",
+      description: "the ace of cups reversed suggests emotional blockages, withheld feelings, or unexpressed love.",
       card: `
-   ┌────────┐
-   │  C     │
-   │  ✧     │
-   │  ☆     │
-   │  ♡     │
-   │  A     │
-   └────────┘`
+    ┌────────┐
+    │  C     │
+    │  ✦     │
+    │  ♡     │
+    │  💧    │
+    │  A     │
+    └────────┘`
     }
   },
-  "Two of Cups": {
+  "two of cups": {
     upright: {
-      title: "Two of Cups",
+      title: "two of cups",
+      description: "the two of cups signifies harmony, mutual love, and the deep connection between two people.",
       card: `
-   ┌────────┐
-   │  2     │
-   │  ♡♡    │
-   │  ☆     │
-   │  ✧     │
-   │  C     │
-   └────────┘`
+    ┌────────┐
+    │  2     │
+    │  💧    │
+    │  ♡♡    │
+    │  ✦     │
+    │  C     │
+    └────────┘`
     },
     reversed: {
-      title: "Two of Cups Reversed",
+      title: "two of cups reversed",
+      description: "the two of cups reversed points to disharmony, imbalance, or tension in relationships.",
       card: `
-   ┌────────┐
-   │  C     │
-   │  ✧     │
-   │  ☆     │
-   │  ♡♡    │
-   │  2     │
-   └────────┘`
+    ┌────────┐
+    │  C     │
+    │  ✦     │
+    │  ♡♡    │
+    │  💧    │
+    │  2     │
+    └────────┘`
     }
   },
-  "Three of Cups": {
+  "three of cups": {
     upright: {
-      title: "Three of Cups",
+      title: "three of cups",
+      description: "the three of cups represents friendship, celebration, and the joy of shared connections.",
       card: `
-   ┌────────┐
-   │  3     │
-   │  ♡♡♡   │
-   │  ☆     │
-   │  ✧     │
-   │  C     │
-   └────────┘`
+    ┌────────┐
+    │  3     │
+    │  💧    │
+    │  ♡♡♡   │
+    │  ✦     │
+    │  C     │
+    └────────┘`
     },
     reversed: {
-      title: "Three of Cups Reversed",
+      title: "three of cups reversed",
+      description: "the three of cups reversed suggests overindulgence, gossip, or the strain of social dynamics.",
       card: `
-   ┌────────┐
-   │  C     │
-   │  ✧     │
-   │  ☆     │
-   │  ♡♡♡   │
-   │  3     │
-   └────────┘`
+    ┌────────┐
+    │  C     │
+    │  ✦     │
+    │  ♡♡♡   │
+    │  💧    │
+    │  3     │
+    └────────┘`
     }
   },
-  "Four of Cups": {
+  "four of cups": {
     upright: {
-      title: "Four of Cups",
+      title: "four of cups",
+      description: "the four of cups symbolizes introspection, apathy, and the need to refocus on emotional opportunities.",
       card: `
-   ┌────────┐
-   │  4     │
-   │  ♡♡    │
-   │  ♡♡    │
-   │  ✧     │
-   │  C     │
-   └────────┘`
+    ┌────────┐
+    │  4     │
+    │  💧    │
+    │  ♡♡    │
+    │  ♡♡    │
+    │  C     │
+    └────────┘`
     },
     reversed: {
-      title: "Four of Cups Reversed",
+      title: "four of cups reversed",
+      description: "the four of cups reversed indicates renewed interest, emotional awakening, or taking new opportunities.",
       card: `
-   ┌────────┐
-   │  C     │
-   │  ✧     │
-   │  ♡♡    │
-   │  ♡♡    │
-   │  4     │
-   └────────┘`
+    ┌────────┐
+    │  C     │
+    │  ♡♡    │
+    │  ♡♡    │
+    │  💧    │
+    │  4     │
+    └────────┘`
     }
   },
-  "Five of Cups": {
+  "five of cups": {
     upright: {
-      title: "Five of Cups",
+      title: "five of cups",
+      description: "the five of cups represents loss, regret, and dwelling on what has been left behind.",
       card: `
-   ┌────────┐
-   │  5     │
-   │  ♡♡♡   │
-   │  ♡♡    │
-   │  ✧     │
-   │  C     │
-   └────────┘`
+    ┌────────┐
+    │  5     │
+    │  💧    │
+    │  ♡♡♡   │
+    │  ♡♡    │
+    │  C     │
+    └────────┘`
     },
     reversed: {
-      title: "Five of Cups Reversed",
+      title: "five of cups reversed",
+      description: "the five of cups reversed suggests acceptance, moving on, and finding hope in emotional recovery.",
       card: `
-   ┌────────┐
-   │  C     │
-   │  ✧     │
-   │  ♡♡    │
-   │  ♡♡♡   │
-   │  5     │
-   └────────┘`
+    ┌────────┐
+    │  C     │
+    │  ♡♡    │
+    │  ♡♡♡   │
+    │  💧    │
+    │  5     │
+    └────────┘`
     }
   },
-  "Six of Cups": {
+  "six of cups": {
     upright: {
-      title: "Six of Cups",
+      title: "six of cups",
+      description: "the six of cups signifies nostalgia, childhood memories, and reconnecting with the past.",
       card: `
-   ┌────────┐
-   │  6     │
-   │  ♡♡♡   │
-   │  ♡♡♡   │
-   │  ✧     │
-   │  C     │
-   └────────┘`
+    ┌────────┐
+    │  6     │
+    │  💧    │
+    │  ♡♡♡   │
+    │  ♡♡♡   │
+    │  C     │
+    └────────┘`
     },
     reversed: {
-      title: "Six of Cups Reversed",
+      title: "six of cups reversed",
+      description: "the six of cups reversed suggests being stuck in the past, unrealistic nostalgia, or letting go of old ties.",
       card: `
-   ┌────────┐
-   │  C     │
-   │  ✧     │
-   │  ♡♡♡   │
-   │  ♡♡♡   │
-   │  6     │
-   └────────┘`
+    ┌────────┐
+    │  C     │
+    │  ♡♡♡   │
+    │  ♡♡♡   │
+    │  💧    │
+    │  6     │
+    └────────┘`
     }
   },
-  "Seven of Cups": {
+  "seven of cups": {
     upright: {
-      title: "Seven of Cups",
+      title: "seven of cups",
+      description: "the seven of cups represents choices, illusions, and the challenge of seeing through fantasy to find clarity.",
       card: `
-   ┌────────┐
-   │  7     │
-   │  ♡♡♡   │
-   │  ♡     │
-   │  ♡♡♡   │
-   │  C     │
-   └────────┘`
+    ┌────────┐
+    │  7     │
+    │  ♡♡♡   │
+    │  ♡     │
+    │  ♡♡♡   │
+    │  C     │
+    └────────┘`
     },
     reversed: {
-      title: "Seven of Cups Reversed",
+      title: "seven of cups reversed",
+      description: "the seven of cups reversed indicates clarity, making focused choices, or breaking free from illusions.",
       card: `
-   ┌────────┐
-   │  C     │
-   │  ♡♡♡   │
-   │  ♡     │
-   │  7     │
-   └────────┘`
+    ┌────────┐
+    │  C     │
+    │  ♡♡♡   │
+    │  ♡     │
+    │  ♡♡♡   │
+    │  7     │
+    └────────┘`
     }
   },
-  // Swords Suite
-  "Ace of Swords": {
+  "eight of cups": {
     upright: {
-      title: "Ace of Swords",
+      title: "eight of cups",
+      description: "the eight of cups signifies walking away, seeking deeper fulfillment, and leaving behind the familiar.",
       card: `
-   ┌────────┐
-   │  A     │
-   │  ⚔     │
-   │  ☆     │
-   │  ✧     │
-   │  S     │
-   └────────┘`
+    ┌────────┐
+    │  8     │
+    │  ♡♡♡♡  │
+    │  💧    │
+    │  ♡♡♡♡  │
+    │  C     │
+    └────────┘`
     },
     reversed: {
-      title: "Ace of Swords Reversed",
+      title: "eight of cups reversed",
+      description: "the eight of cups reversed suggests fear of change, stagnation, or returning to something left behind.",
       card: `
-   ┌────────┐
-   │  S     │
-   │  ✧     │
-   │  ☆     │
-   │  ⚔     │
-   │  A     │
-   └────────┘`
+    ┌────────┐
+    │  C     │
+    │  ♡♡♡♡  │
+    │  💧    │
+    │  ♡♡♡♡  │
+    │  8     │
+    └────────┘`
     }
   },
-  "Two of Swords": {
+  "nine of cups": {
     upright: {
-      title: "Two of Swords",
+      title: "nine of cups",
+      description: "the nine of cups represents satisfaction, contentment, and the fulfillment of personal desires.",
       card: `
-   ┌────────┐
-   │  2     │
-   │  ⚔⚔    │
-   │  ☆     │
-   │  ✧     │
-   │  S     │
-   └────────┘`
+    ┌────────┐
+    │  9     │
+    │  ♡♡♡   │
+    │  ♡♡♡   │
+    │  ♡♡♡   │
+    │  C     │
+    └────────┘`
     },
     reversed: {
-      title: "Two of Swords Reversed",
+      title: "nine of cups reversed",
+      description: "the nine of cups reversed indicates dissatisfaction, overindulgence, or a lack of emotional fulfillment.",
       card: `
-   ┌────────┐
-   │  S     │
-   │  ✧     │
-   │  ☆     │
-   │  ⚔⚔    │
-   │  2     │
-   └────────┘`
+    ┌────────┐
+    │  C     │
+    │  ♡♡♡   │
+    │  ♡♡♡   │
+    │  ♡♡♡   │
+    │  9     │
+    └────────┘`
     }
   },
-  "Three of Swords": {
+  "ten of cups": {
     upright: {
-      title: "Three of Swords",
+      title: "ten of cups",
+      description: "the ten of cups signifies emotional fulfillment, harmony, and a sense of complete happiness in relationships.",
       card: `
-   ┌────────┐
-   │  3     │
-   │  ⚔⚔⚔   │
-   │  ☆     │
-   │  ✧     │
-   │  S     │
-   └────────┘`
+    ┌────────┐
+    │  10    │
+    │  ♡♡♡♡  │
+    │  ♡♡    │
+    │  ♡♡♡♡  │
+    │  C     │
+    └────────┘`
     },
     reversed: {
-      title: "Three of Swords Reversed",
+      title: "ten of cups reversed",
+      description: "the ten of cups reversed points to disharmony, strained relationships, or unmet expectations.",
       card: `
-   ┌────────┐
-   │  S     │
-   │  ✧     │
-   │  ☆     │
-   │  ⚔⚔⚔   │
-   │  3     │
-   └────────┘`
+    ┌────────┐
+    │  C     │
+    │  ♡♡♡♡  │
+    │  ♡♡    │
+    │  ♡♡♡♡  │
+    │  10    │
+    └────────┘`
     }
   },
-  "Four of Swords": {
+  "page of cups": {
     upright: {
-      title: "Four of Swords",
+      title: "page of cups",
+      description: "the page of cups signifies new emotional experiences, curiosity, and the wonder of intuition.",
       card: `
-   ┌────────┐
-   │  4     │
-   │  ⚔⚔    │
-   │  ⚔⚔    │
-   │  ✧     │
-   │  S     │
-   └────────┘`
+    ┌────────┐
+    │  P     │
+    │  💧    │
+    │  ♡     │
+    │  ✧     │
+    │  C     │
+    └────────┘`
     },
     reversed: {
-      title: "Four of Swords Reversed",
+      title: "page of cups reversed",
+      description: "the page of cups reversed suggests emotional immaturity, insecurity, or repressed feelings.",
       card: `
-   ┌────────┐
-   │  S     │
-   │  ✧     │
-   │  ⚔⚔    │
-   │  ⚔⚔    │
-   │  4     │
-   └────────┘`
+    ┌────────┐
+    │  C     │
+    │  ✧     │
+    │  ♡     │
+    │  💧    │
+    │  P     │
+    └────────┘`
     }
   },
-  "Five of Swords": {
+  "knight of cups": {
     upright: {
-      title: "Five of Swords",
+      title: "knight of cups",
+      description: "the knight of cups represents romance, charm, and pursuing dreams with emotional depth.",
       card: `
-   ┌────────┐
-   │  5     │
-   │  ⚔⚔⚔   │
-   │  ⚔⚔    │
-   │  ✧     │
-   │  S     │
-   └────────┘`
+    ┌────────┐
+    │  Kn    │
+    │  💧    │
+    │  ♡     │
+    │  ⚡    │
+    │  C     │
+    └────────┘`
     },
     reversed: {
-      title: "Five of Swords Reversed",
+      title: "knight of cups reversed",
+      description: "the knight of cups reversed indicates moodiness, unrealistic expectations, or emotional instability.",
       card: `
-   ┌────────┐
-   │  S     │
-   │  ✧     │
-   │  ⚔⚔    │
-   │  ⚔⚔⚔   │
-   │  5     │
-   └────────┘`
+    ┌────────┐
+    │  C     │
+    │  ⚡    │
+    │  ♡     │
+    │  💧    │
+    │  Kn    │
+    └────────┘`
     }
   },
-  "Six of Swords": {
+  "queen of cups": {
     upright: {
-      title: "Six of Swords",
+      title: "queen of cups",
+      description: "the queen of cups embodies compassion, emotional intuition, and deep nurturing energy.",
       card: `
-   ┌────────┐
-   │  6     │
-   │  ⚔⚔⚔   │
-   │  ⚔⚔⚔   │
-   │  ✧     │
-   │  S     │
-   └────────┘`
+    ┌────────┐
+    │  Q     │
+    │  ♛     │
+    │  ♡     │
+    │  💧    │
+    │  C     │
+    └────────┘`
     },
     reversed: {
-      title: "Six of Swords Reversed",
+      title: "queen of cups reversed",
+      description: "the queen of cups reversed suggests emotional imbalance, insecurity, or a tendency to self-sacrifice.",
       card: `
-   ┌────────┐
-   │  S     │
-   │  ✧     │
-   │  ⚔⚔⚔   │
-   │  ⚔⚔⚔   │
-   │  6     │
-   └────────┘`
+    ┌────────┐
+    │  C     │
+    │  💧    │
+    │  ♡     │
+    │  ♛     │
+    │  Q     │
+    └────────┘`
     }
   },
-  "Seven of Swords": {
+  "king of cups": {
     upright: {
-      title: "Seven of Swords",
+      title: "king of cups",
+      description: "the king of cups represents emotional mastery, balance, and a calm, compassionate leadership style.",
       card: `
-   ┌────────┐
-   │  7     │
-   │  ⚔⚔⚔   │
-   │  ⚔     │
-   │  ⚔⚔⚔   │
-   │  S     │
-   └────────┘`
+    ┌────────┐
+    │  K     │
+    │  ♚     │
+    │  ♡     │
+    │  💧    │
+    │  C     │
+    └────────┘`
     },
     reversed: {
-      title: "Seven of Swords Reversed",
+      title: "king of cups reversed",
+      description: "the king of cups reversed suggests emotional manipulation, volatility, or lack of control over feelings.",
       card: `
-   ┌────────┐
-   │  S     │
-   │  ⚔⚔⚔   │
-   │  ⚔     │
-   │  ⚔⚔⚔   │
-   │  7     │
-   └────────┘`
+    ┌────────┐
+    │  C     │
+    │  💧    │
+    │  ♡     │
+    │  ♚     │
+    │  K     │
+    └────────┘`
+    }
+  }, 
+  "ace of swords": {
+    upright: {
+      title: "ace of swords",
+      description: "the ace of swords represents mental clarity, breakthrough ideas, and the power of truth and intellect.",
+      card: `
+    ┌────────┐
+    │  A     │
+    │  🗡️     │
+    │  ⚡     │
+    │  ✦     │
+    │  S     │
+    └────────┘`
     }
   },
-  // Pentacles Suite
-  "Ace of Pentacles": {
-    upright: {
-      title: "Ace of Pentacles",
-      card: `
-   ┌────────┐
-   │  A     │
-   │  ⛀     │
-   │  ☆     │
-   │  ✧     │
-   │  P     │
-   └────────┘`
+      // swords suit and their reversed cards
+    "ace of swords": {
+      upright: {
+        title: "ace of swords",
+        description: "the ace of swords represents mental clarity, breakthrough ideas, and the power of truth and intellect.",
+        card: `
+    ┌────────┐
+    │  A     │
+    │  🗡️     │
+    │  ⚡     │
+    │  ✦     │
+    │  S     │
+    └────────┘`
+      },
+      reversed: {
+        title: "ace of swords reversed",
+        description: "the ace of swords reversed suggests confusion, miscommunication, or the distortion of truth.",
+        card: `
+    ┌────────┐
+    │  S     │
+    │  ✦     │
+    │  ⚡     │
+    │  🗡️     │
+    │  A     │
+    └────────┘`
+      }
     },
-    reversed: {
-      title: "Ace of Pentacles Reversed",
-      card: `
-   ┌────────┐
-   │  P     │
-   │  ✧     │
-   │  ☆     │
-   │  ⛀     │
-   │  A     │
-   └────────┘`
-    }
-  },
-  "Two of Pentacles": {
-    upright: {
-      title: "Two of Pentacles",
-      card: `
-   ┌────────┐
-   │  2     │
-   │  ⛀⛀    │
-   │  ☆     │
-   │  ✧     │
-   │  P     │
-   └────────┘`
+    "two of swords": {
+      upright: {
+        title: "two of swords",
+        description: "the two of swords signifies difficult decisions, indecision, and finding balance between opposing forces.",
+        card: `
+    ┌────────┐
+    │  2     │
+    │  🗡️🗡️   │
+    │  ⚔️     │
+    │  ✦     │
+    │  S     │
+    └────────┘`
+      },
+      reversed: {
+        title: "two of swords reversed",
+        description: "the two of swords reversed suggests confusion, stalemate, or avoidance of making decisions.",
+        card: `
+    ┌────────┐
+    │  S     │
+    │  ✦     │
+    │  ⚔️     │
+    │  🗡️🗡️   │
+    │  2     │
+    └────────┘`
+      }
     },
-    reversed: {
-      title: "Two of Pentacles Reversed",
-      card: `
-   ┌────────┐
-   │  P     │
-   │  ✧     │
-   │  ☆     │
-   │  ⛀⛀    │
-   │  2     │
-   └────────┘`
-    }
-  },
-  "Three of Pentacles": {
-    upright: {
-      title: "Three of Pentacles",
-      card: `
-   ┌────────┐
-   │  3     │
-   │  ⛀⛀⛀   │
-   │  ☆     │
-   │  ✧     │
-   │  P     │
-   └────────┘`
+    "three of swords": {
+      upright: {
+        title: "three of swords",
+        description: "the three of swords represents heartbreak, sorrow, and emotional pain from difficult experiences.",
+        card: `
+    ┌────────┐
+    │  3     │
+    │  🗡️🗡️🗡️ │
+    │  ⚔️     │
+    │  ✦     │
+    │  S     │
+    └────────┘`
+      },
+      reversed: {
+        title: "three of swords reversed",
+        description: "the three of swords reversed signifies healing, forgiveness, and overcoming emotional pain.",
+        card: `
+    ┌────────┐
+    │  S     │
+    │  ✦     │
+    │  ⚔️     │
+    │  🗡️🗡️🗡️ │
+    │  3     │
+    └────────┘`
+      }
     },
-    reversed: {
-      title: "Three of Pentacles Reversed",
-      card: `
-   ┌────────┐
-   │  P     │
-   │  ✧     │
-   │  ☆     │
-   │  ⛀⛀⛀   │
-   │  3     │
-   └────────┘`
-    }
-  },
-  "Four of Pentacles": {
-    upright: {
-      title: "Four of Pentacles",
-      card: `
-   ┌────────┐
-   │  4     │
-   │  ⛀⛀    │
-   │  ⛀⛀    │
-   │  ✧     │
-   │  P     │
-   └────────┘`
+    "four of swords": {
+      upright: {
+        title: "four of swords",
+        description: "the four of swords symbolizes rest, recovery, and the need for reflection and rejuvenation.",
+        card: `
+    ┌────────┐
+    │  4     │
+    │  🗡️🗡️   │
+    │  🗡️🗡️   │
+    │  ✦     │
+    │  S     │
+    └────────┘`
+      },
+      reversed: {
+        title: "four of swords reversed",
+        description: "the four of swords reversed suggests burnout, restlessness, or the inability to find peace.",
+        card: `
+    ┌────────┐
+    │  S     │
+    │  ✦     │
+    │  🗡️🗡️   │
+    │  🗡️🗡️   │
+    │  4     │
+    └────────┘`
+      }
     },
-    reversed: {
-      title: "Four of Pentacles Reversed",
-      card: `
-   ┌────────┐
-   │  P     │
-   │  ✧     │
-   │  ⛀⛀    │
-   │  ⛀⛀    │
-   │  4     │
-   └────────┘`
-    }
-  },
-  "Five of Pentacles": {
-    upright: {
-      title: "Five of Pentacles",
-      card: `
-   ┌────────┐
-   │  5     │
-   │  ⛀⛀⛀   │
-   │  ⛀⛀    │
-   │  ✧     │
-   │  P     │
-   └────────┘`
+    "five of swords": {
+      upright: {
+        title: "five of swords",
+        description: "the five of swords represents conflict, betrayal, or a hollow victory at the expense of others.",
+        card: `
+    ┌────────┐
+    │  5     │
+    │  🗡️🗡️🗡️ │
+    │  🗡️🗡️   │
+    │  ✦     │
+    │  S     │
+    └────────┘`
+      },
+      reversed: {
+        title: "five of swords reversed",
+        description: "the five of swords reversed suggests resolution of conflict, forgiveness, or making amends.",
+        card: `
+    ┌────────┐
+    │  S     │
+    │  ✦     │
+    │  🗡️🗡️   │
+    │  🗡️🗡️🗡️ │
+    │  5     │
+    └────────┘`
+      }
     },
-    reversed: {
-      title: "Five of Pentacles Reversed",
-      card: `
-   ┌────────┐
-   │  P     │
-   │  ✧     │
-   │  ⛀⛀    │
-   │  ⛀⛀⛀   │
-   │  5     │
-   └────────┘`
-    }
-  },
-  "Six of Pentacles": {
-    upright: {
-      title: "Six of Pentacles",
-      card: `
-   ┌────────┐
-   │  6     │
-   │  ⛀⛀⛀   │
-   │  ⛀⛀⛀   │
-   │  ✧     │
-   │  P     │
-   └────────┘`
+    "six of swords": {
+      upright: {
+        title: "six of swords",
+        description: "the six of swords signifies transition, moving forward, and finding peace after a struggle.",
+        card: `
+    ┌────────┐
+    │  6     │
+    │  🗡️🗡️🗡️ │
+    │  🗡️🗡️🗡️ │
+    │  ✦     │
+    │  S     │
+    └────────┘`
+      },
+      reversed: {
+        title: "six of swords reversed",
+        description: "the six of swords reversed indicates difficulty letting go, resistance to change, or stagnation.",
+        card: `
+    ┌────────┐
+    │  S     │
+    │  ✦     │
+    │  🗡️🗡️🗡️ │
+    │  🗡️🗡️🗡️ │
+    │  6     │
+    └────────┘`
+      }
     },
-    reversed: {
-      title: "Six of Pentacles Reversed",
-      card: `
-   ┌────────┐
-   │  P     │
-   │  ✧     │
-   │  ⛀⛀⛀   │
-   │  ⛀⛀⛀   │
-   │  6     │
-   └────────┘`
-    }
-  },
-  "Seven of Pentacles": {
-    upright: {
-      title: "Seven of Pentacles",
-      card: `
-   ┌────────┐
-   │  7     │
-   │  ⛀⛀⛀   │
-   │  ⛀     │
-   │  ⛀⛀⛀   │
-   │  P     │
-   └────────┘`
+    "seven of swords": {
+      upright: {
+        title: "seven of swords",
+        description: "the seven of swords symbolizes deception, strategy, and the need for discretion or careful planning.",
+        card: `
+    ┌────────┐
+    │  7     │
+    │  🗡️🗡️🗡️ │
+    │  🗡️     │
+    │  🗡️🗡️🗡️ │
+    │  S     │
+    └────────┘`
+      },
+      reversed: {
+        title: "seven of swords reversed",
+        description: "the seven of swords reversed represents guilt, exposure of deceit, or a return to honesty.",
+        card: `
+    ┌────────┐
+    │  S     │
+    │  🗡️🗡️🗡️ │
+    │  🗡️     │
+    │  🗡️🗡️🗡️ │
+    │  7     │
+    └────────┘`
+      }
     },
-    reversed: {
-      title: "Seven of Pentacles Reversed",
-      card: `
-   ┌────────┐
-   │  P     │
-   │  ⛀⛀⛀   │
-   │  ⛀     │
-   │  ⛀⛀⛀   │
-   │  7     │
-   └────────┘`
+    "eight of swords": {
+      upright: {
+        title: "eight of swords",
+        description: "the eight of swords signifies restriction, feeling trapped, and self-imposed limitations.",
+        card: `
+    ┌────────┐
+    │  8     │
+    │  🗡️🗡️🗡️🗡️ │
+    │  ⚡     │
+    │  🗡️🗡️🗡️🗡️ │
+    │  S     │
+    └────────┘`
+      },
+      reversed: {
+        title: "eight of swords reversed",
+        description: "the eight of swords reversed suggests liberation, breaking free, or gaining clarity from constraints.",
+        card: `
+    ┌────────┐
+    │  S     │
+    │  🗡️🗡️🗡️🗡️ │
+    │  ⚡     │
+    │  🗡️🗡️🗡️🗡️ │
+    │  8     │
+    └────────┘`
+      }
+    },
+    "nine of swords": {
+      upright: {
+        title: "nine of swords",
+        description: "the nine of swords represents anxiety, worry, and sleepless nights caused by inner turmoil.",
+        card: `
+    ┌────────┐
+    │  9     │
+    │  🗡️🗡️🗡️ │
+    │  🗡️🗡️🗡️ │
+    │  🗡️🗡️🗡️ │
+    │  S     │
+    └────────┘`
+      },
+      reversed: {
+        title: "nine of swords reversed",
+        description: "the nine of swords reversed signifies overcoming fear, finding hope, and releasing mental anguish.",
+        card: `
+    ┌────────┐
+    │  S     │
+    │  🗡️🗡️🗡️ │
+    │  🗡️🗡️🗡️ │
+    │  🗡️🗡️🗡️ │
+    │  9     │
+    └────────┘`
+      }
+    },
+    "ten of swords": {
+      upright: {
+        title: "ten of swords",
+        description: "the ten of swords symbolizes betrayal, painful endings, and the darkest hour before rebirth.",
+        card: `
+    ┌────────┐
+    │  10    │
+    │  🗡️🗡️🗡️🗡️ │
+    │  🗡️🗡️   │
+    │  🗡️🗡️🗡️🗡️ │
+    │  S     │
+    └────────┘`
+      },
+      reversed: {
+        title: "ten of swords reversed",
+        description: "the ten of swords reversed signifies recovery, letting go of pain, and the dawn of a new cycle.",
+        card: `
+    ┌────────┐
+    │  S     │
+    │  🗡️🗡️🗡️🗡️ │
+    │  🗡️🗡️   │
+    │  🗡️🗡️🗡️🗡️ │
+    │  10    │
+    └────────┘`
+      }
+    },
+    "page of swords": {
+      upright: {
+        title: "page of swords",
+        description: "the page of swords represents curiosity, new ideas, and a thirst for knowledge and communication.",
+        card: `
+    ┌────────┐
+    │  P     │
+    │  🗡️     │
+    │  ⚡     │
+    │  ✧     │
+    │  S     │
+    └────────┘`
+      },
+      reversed: {
+        title: "page of swords reversed",
+        description: "the page of swords reversed suggests gossip, mental restlessness, or a lack of focus.",
+        card: `
+    ┌────────┐
+    │  S     │
+    │  ✧     │
+    │  ⚡     │
+    │  🗡️     │
+    │  P     │
+    └────────┘`
+      }
+    },
+    "knight of swords": {
+      upright: {
+        title: "knight of swords",
+        description: "the knight of swords embodies determination, action, and a fast-paced pursuit of goals.",
+        card: `
+    ┌────────┐
+    │  Kn    │
+    │  ⚔️     │
+    │  🗡️     │
+    │  ⚡     │
+    │  S     │
+    └────────┘`
+      },
+      reversed: {
+        title: "knight of swords reversed",
+        description: "the knight of swords reversed points to impulsiveness, recklessness, or a lack of direction.",
+        card: `
+    ┌────────┐
+    │  S     │
+    │  ⚡     │
+    │  🗡️     │
+    │  ⚔️     │
+    │  Kn    │
+    └────────┘`
+      }
+    },
+    "queen of swords": {
+      upright: {
+        title: "queen of swords",
+        description: "the queen of swords represents intellect, independence, and clear, honest communication.",
+        card: `
+    ┌────────┐
+    │  Q     │
+    │  ♛     │
+    │  🗡️     │
+    │  ⚡     │
+    │  S     │
+    └────────┘`
+      },
+      reversed: {
+        title: "queen of swords reversed",
+        description: "the queen of swords reversed suggests coldness, overly critical thinking, or miscommunication.",
+        card: `
+    ┌────────┐
+    │  S     │
+    │  ⚡     │
+    │  🗡️     │
+    │  ♛     │
+    │  Q     │
+    └────────┘`
+      }
+    },
+    "king of swords": {
+      upright: {
+        title: "king of swords",
+        description: "the king of swords embodies authority, truth, and mastery of intellect and rationality.",
+        card: `
+    ┌────────┐
+    │  K     │
+    │  ♚     │
+    │  🗡️     │
+    │  ⚡     │
+    │  S     │
+    └────────┘`
+      },
+      reversed: {
+        title: "king of swords reversed",
+        description: "the king of swords reversed represents manipulation, misuse of power, or lack of clarity.",
+        card: `
+    ┌────────┐
+    │  S     │
+    │  ⚡     │
+    │  🗡️     │
+    │  ♚     │
+    │  K     │
+    └────────┘`
+      }
+    },
+    // pentacles suit and their reversed cards
+    "ace of pentacles": {
+      upright: {
+        title: "ace of pentacles",
+        description: "the ace of pentacles represents new opportunities, material abundance, and the potential for prosperity.",
+        card: `
+    ┌────────┐
+    │  A     │
+    │  ★     │
+    │  ⚡     │
+    │  ✦     │
+    │  P     │
+    └────────┘`
+      },
+      reversed: {
+        title: "ace of pentacles reversed",
+        description: "the ace of pentacles reversed suggests missed opportunities, financial delays, or lack of grounding.",
+        card: `
+    ┌────────┐
+    │  P     │
+    │  ✦     │
+    │  ⚡     │
+    │  ★     │
+    │  A     │
+    └────────┘`
+      }
+    },
+    "two of pentacles": {
+      upright: {
+        title: "two of pentacles",
+        description: "the two of pentacles signifies balance, adaptability, and managing multiple priorities.",
+        card: `
+    ┌────────┐
+    │  2     │
+    │  ★★    │
+    │  ⚖️     │
+    │  ✦     │
+    │  P     │
+    └────────┘`
+      },
+      reversed: {
+        title: "two of pentacles reversed",
+        description: "the two of pentacles reversed points to imbalance, disorganization, or feeling overwhelmed.",
+        card: `
+    ┌────────┐
+    │  P     │
+    │  ✦     │
+    │  ⚖️     │
+    │  ★★    │
+    │  2     │
+    └────────┘`
+      }
+    },
+    "three of pentacles": {
+      upright: {
+        title: "three of pentacles",
+        description: "the three of pentacles represents teamwork, collaboration, and skillful achievement.",
+        card: `
+    ┌────────┐
+    │  3     │
+    │  ★★★   │
+    │  ⚒️     │
+    │  ✦     │
+    │  P     │
+    └────────┘`
+      },
+      reversed: {
+        title: "three of pentacles reversed",
+        description: "the three of pentacles reversed suggests lack of teamwork, miscommunication, or unrecognized efforts.",
+        card: `
+    ┌────────┐
+    │  P     │
+    │  ✦     │
+    │  ⚒️     │
+    │  ★★★   │
+    │  3     │
+    └────────┘`
+      }
+    },
+    "four of pentacles": {
+      upright: {
+        title: "four of pentacles",
+        description: "the four of pentacles symbolizes stability, financial security, and holding on to resources.",
+        card: `
+    ┌────────┐
+    │  4     │
+    │  ★★    │
+    │  ★★    │
+    │  ✦     │
+    │  P     │
+    └────────┘`
+      },
+      reversed: {
+        title: "four of pentacles reversed",
+        description: "the four of pentacles reversed suggests letting go, generosity, or releasing financial fears.",
+        card: `
+    ┌────────┐
+    │  P     │
+    │  ✦     │
+    │  ★★    │
+    │  ★★    │
+    │  4     │
+    └────────┘`
+      }
+    },
+    "five of pentacles": {
+      upright: {
+        title: "five of pentacles",
+        description: "the five of pentacles represents financial hardship, isolation, or struggles with security.",
+        card: `
+    ┌────────┐
+    │  5     │
+    │  ★★★   │
+    │  ★★    │
+    │  ✦     │
+    │  P     │
+    └────────┘`
+      },
+      reversed: {
+        title: "five of pentacles reversed",
+        description: "the five of pentacles reversed signifies recovery, renewed hope, and finding support.",
+        card: `
+    ┌────────┐
+    │  P     │
+    │  ✦     │
+    │  ★★    │
+    │  ★★★   │
+    │  5     │
+    └────────┘`
+      }
+    },
+    "six of pentacles": {
+      upright: {
+        title: "six of pentacles",
+        description: "the six of pentacles represents generosity, balance in giving and receiving, and charity.",
+        card: `
+    ┌────────┐
+    │  6     │
+    │  ★★★   │
+    │  ★★★   │
+    │  ⚖️     │
+    │  P     │
+    └────────┘`
+      },
+      reversed: {
+        title: "six of pentacles reversed",
+        description: "the six of pentacles reversed suggests inequality, selfishness, or imbalance in relationships.",
+        card: `
+    ┌────────┐
+    │  P     │
+    │  ⚖️     │
+    │  ★★★   │
+    │  ★★★   │
+    │  6     │
+    └────────┘`
+      }
+    },
+    "seven of pentacles": {
+      upright: {
+        title: "seven of pentacles",
+        description: "the seven of pentacles symbolizes patience, investment, and long-term growth through effort.",
+        card: `
+    ┌────────┐
+    │  7     │
+    │  ★★★   │
+    │  ★      │
+    │  ★★★   │
+    │  P     │
+    └────────┘`
+      },
+      reversed: {
+        title: "seven of pentacles reversed",
+        description: "the seven of pentacles reversed indicates impatience, wasted effort, or lack of progress.",
+        card: `
+    ┌────────┐
+    │  P     │
+    │  ★★★   │
+    │  ★      │
+    │  ★★★   │
+    │  7     │
+    └────────┘`
+      }
+    },
+    "eight of pentacles": {
+      upright: {
+        title: "eight of pentacles",
+        description: "the eight of pentacles signifies hard work, dedication, and honing one's skills.",
+        card: `
+    ┌────────┐
+    │  8     │
+    │  ★★★★  │
+    │  ⚒️     │
+    │  ★★★★  │
+    │  P     │
+    └────────┘`
+      },
+      reversed: {
+        title: "eight of pentacles reversed",
+        description: "the eight of pentacles reversed points to lack of focus, shortcuts, or dissatisfaction with work.",
+        card: `
+    ┌────────┐
+    │  P     │
+    │  ★★★★  │
+    │  ⚒️     │
+    │  ★★★★  │
+    │  8     │
+    └────────┘`
+      }
+    },
+    "nine of pentacles": {
+      upright: {
+        title: "nine of pentacles",
+        description: "the nine of pentacles represents independence, luxury, and enjoying the rewards of hard work.",
+        card: `
+    ┌────────┐
+    │  9     │
+    │  ★★★   │
+    │  ★★★   │
+    │  ★★★   │
+    │  P     │
+    └────────┘`
+      },
+      reversed: {
+        title: "nine of pentacles reversed",
+        description: "the nine of pentacles reversed suggests financial setbacks, overindulgence, or dependence on others.",
+        card: `
+    ┌────────┐
+    │  P     │
+    │  ★★★   │
+    │  ★★★   │
+    │  ★★★   │
+    │  9     │
+    └────────┘`
+      }
+    },
+    "ten of pentacles": {
+      upright: {
+        title: "ten of pentacles",
+        description: "the ten of pentacles signifies wealth, family legacy, and long-term success and stability.",
+        card: `
+    ┌────────┐
+    │  10    │
+    │  ★★★★  │
+    │  ★★    │
+    │  ★★★★  │
+    │  P     │
+    └────────┘`
+      },
+      reversed: {
+        title: "ten of pentacles reversed",
+        description: "the ten of pentacles reversed points to family disputes, financial instability, or short-term thinking.",
+        card: `
+    ┌────────┐
+    │  P     │
+    │  ★★★★  │
+    │  ★★    │
+    │  ★★★★  │
+    │  10    │
+    └────────┘`
+      }
+    },
+    "page of pentacles": {
+      upright: {
+        title: "page of pentacles",
+        description: "the page of pentacles represents new opportunities, learning, and a practical approach to goals.",
+        card: `
+    ┌────────┐
+    │  P     │
+    │  ★      │
+    │  ⚡     │
+    │  ✧     │
+    │  P     │
+    └────────┘`
+      },
+      reversed: {
+        title: "page of pentacles reversed",
+        description: "the page of pentacles reversed suggests procrastination, missed opportunities, or lack of focus.",
+        card: `
+    ┌────────┐
+    │  P     │
+    │  ✧     │
+    │  ⚡     │
+    │  ★      │
+    │  P     │
+    └────────┘`
+      }
+    },
+    "knight of pentacles": {
+      upright: {
+        title: "knight of pentacles",
+        description: "the knight of pentacles embodies hard work, reliability, and a steady, practical approach to progress.",
+        card: `
+    ┌────────┐
+    │  Kn    │
+    │  ⚒️     │
+    │  ★      │
+    │  ⚡     │
+    │  P     │
+    └────────┘`
+      },
+      reversed: {
+        title: "knight of pentacles reversed",
+        description: "the knight of pentacles reversed indicates stagnation, laziness, or overly cautious behavior.",
+        card: `
+    ┌────────┐
+    │  P     │
+    │  ⚡     │
+    │  ★      │
+    │  ⚒️     │
+    │  Kn    │
+    └────────┘`
+      }
+    },
+    "queen of pentacles": {
+      upright: {
+        title: "queen of pentacles",
+        description: "the queen of pentacles represents nurturing, abundance, and practical support for others.",
+        card: `
+    ┌────────┐
+    │  Q     │
+    │  ♛     │
+    │  ★      │
+    │  ⚡     │
+    │  P     │
+    └────────┘`
+      },
+      reversed: {
+        title: "queen of pentacles reversed",
+        description: "the queen of pentacles reversed suggests neglect, work-life imbalance, or material overfocus.",
+        card: `
+    ┌────────┐
+    │  P     │
+    │  ⚡     │
+    │  ★      │
+    │  ♛     │
+    │  Q     │
+    └────────┘`
+      }
+    },
+    "king of pentacles": {
+      upright: {
+        title: "king of pentacles",
+        description: "the king of pentacles embodies wealth, stability, and mastery over material success.",
+        card: `
+    ┌────────┐
+    │  K     │
+    │  ♚     │
+    │  ★      │
+    │  ⚡     │
+    │  P     │
+    └────────┘`
+      },
+      reversed: {
+        title: "king of pentacles reversed",
+        description: "the king of pentacles reversed points to greed, financial instability, or mismanagement of resources.",
+        card: `
+    ┌────────┐
+    │  P     │
+    │  ⚡     │
+    │  ★      │
+    │  ♚     │
+    │  K     │
+    └────────┘`
+      }
     }
   }
-};
 
-module.exports = {
-  deck: deck
-};
+  // export the deck
+  module.exports = {
+    deck: deck
+  };
