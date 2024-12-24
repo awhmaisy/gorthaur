@@ -1,10 +1,12 @@
 # gorthaur
 
+
 <img width="395" alt="image" src="https://github.com/user-attachments/assets/b0aa45df-837a-4b00-97ea-c23a9a96282f" />
+
 
 ────୨ৎ────
 
-CLI tarot card pulls from a deck of 78
+- CLI tarot card pulls from a deck of 78
 - you may select one, two or three cards
 - three being your past, present and future :D
   
@@ -17,7 +19,9 @@ CLI tarot card pulls from a deck of 78
 - **v3** - will need to explain why the title of this project is a word from J.R.R. tolkien...
 - **v4** - we will add more cards and descriptions because its quite uninformative right now!
 
+
 <img width="494" alt="image" src="https://github.com/user-attachments/assets/ddb5df09-26c6-4f20-b327-b1390506fde3" />
+
 
 ## installation / usage
 ✦ . 　⁺ 　 . ✦ . 　⁺ 　 . ✦
