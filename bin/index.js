@@ -61,6 +61,7 @@ function pickCard(numCards) {
 function end(userName) {
   inquirer.prompt(exit).then(answers => {
     if (answers.exit) {
+      console.clear(); // Clear the console
       loader.start();
       setTimeout(function() {
         (async () => {
