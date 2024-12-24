@@ -16,12 +16,14 @@ CLI tarot card pulls from a deck of 78
 
 ## installation / usage
 ✦ . 　⁺ 　 . ✦ . 　⁺ 　 . ✦
+
 to install the necessary dependencies, run: `npm install -g gorthaur`. 
 
 after that, you can use the CLI by executing `gorthaur` in your terminal.
 
 ## inspiration and credits
 ✦ . 　⁺ 　 . ✦ . 　⁺ 　 . ✦
+
 - [꒰ lawreka/ascii-tarot, this is what made me want to create my own version! ꒱](https://github.com/laurabreiman/ascii-tarot/tree/unique-cards)
 - [꒰ chalk gave me purpose ꒱](https://github.com/chalk/chalk?tab=readme-ov-file#why-not-switch-to-a-smaller-coloring-package)
 - [꒰ boxen also gave me purpose ꒱](https://github.com/sindresorhus/boxen)
