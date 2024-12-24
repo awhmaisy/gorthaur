@@ -1,8 +1,10 @@
 # gorthaur
 ────୨ৎ────
+
 CLI tarot card pulls from a deck of 78
 - you may select one, two or three cards
 - three being your past, present and future :D
+  
 ────୨ৎ────
 
 ## version timeline
