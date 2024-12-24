@@ -116,7 +116,7 @@ function run() {
           { 
             name: '3', 
             value: 3, 
-            titles: ['past card:', 'present card:', 'future card:'],
+            titles: ['past card', 'present card', 'future card'],
             displayTitles: true
           }
         ],
@@ -129,7 +129,7 @@ function run() {
       const numCards = parseInt(answers.cardCount);
       const drawnCards = pickCard(numCards);
 
-      console.log('your cards:');
+      console.log('\nyour cards:\n');
       drawnCards.forEach((card, index) => {
         let cardTitle;
         if (numCards === 3) {
