@@ -1,8 +1,6 @@
 # gorthaur
 
-♡───────────────────────────────────────────♡
-│ CLI tarot card pulls from a deck of 78 │
-♡───────────────────────────────────────────♡
+CLI tarot card pulls from a deck of 78
 
 ## version timeline
 
