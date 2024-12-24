@@ -14,10 +14,11 @@
 
 ## version timeline
 ✦ . 　⁺ 　 . ✦ . 　⁺ 　 . ✦
-- **v1** - basic functionality. really basic.
-- **v2** - ok we changed colors
-- **v3** - will need to explain why the title of this project is a word from J.R.R. tolkien...
-- **v4** - we will add more cards and descriptions because its quite uninformative right now!
+- **1** - basic functionality. really basic.
+- **2** - ok we changed colors
+- **3** - will need to explain why the title of this project is a word from J.R.R. tolkien...
+- **4 (soon)** - adding all cards and descriptions because its quite uninformative right now!
+- **5 (soon)** - updating descriptions to something OTHER than a 4o generated sentence 
 
 
 <img width="494" alt="image" src="https://github.com/user-attachments/assets/ddb5df09-26c6-4f20-b327-b1390506fde3" />
