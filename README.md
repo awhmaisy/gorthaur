@@ -6,7 +6,7 @@
 
 ────୨ৎ────
 
-- CLI tarot card pulls from a deck of 78
+- CLI tarot card pulls and interpretations (thanks 4o)
 - you may select one, two or three cards
 - three being your past, present and future :D
   
